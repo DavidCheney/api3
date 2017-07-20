@@ -1,0 +1,514 @@
+{
+  "admins": [
+    {
+      "userId": {
+        "uoid": "1234aaaaaaaa5678",
+        "resourceType": "USER",
+        "name": "David Cheney",
+        "description": ""
+      },
+      "roles": [
+        "admin"
+      ]
+    }
+  ],
+  "virtualDataSpheres": [
+    {
+      "id": {
+        "uoid": "ds2ds2ds2ds2ds2ds2",
+        "resourceType": "VIRTUAL_DATASPHERE",
+        "name": "DataSphere2",
+        "description": ""
+      },
+      "location": "",
+      "admins": [
+        {
+          "userId": {
+            "uoid": "1234ssssssss5678",
+            "resourceType": "USER",
+            "name": "Simeon Lee",
+            "description": ""
+          },
+          "roles": [
+            "admin",
+            "wizard"
+          ]
+        }
+      ]
+    },
+    {
+      "uoid": "ds1ds1ds1ds1ds1ds1",
+      "id": {
+        "uoid": "ds1ds1ds1ds1ds1ds1",
+        "resourceType": "VIRTUAL_DATASPHERE",
+        "name": "DataSphere1",
+        "description": ""
+      },
+      "location": "",
+      "admins": [
+        {
+          "userId": {
+            "uoid": "1234ssssssss5678",
+            "resourceType": "USER",
+            "name": "Simeon Lee",
+            "description": ""
+          },
+          "roles": [
+            "admin",
+            "wizard"
+          ]
+        },
+        {
+          "userId": {
+            "uoid": "1234aaaaaaaa5678",
+            "resourceType": "USER",
+            "name": "David Cheney",
+            "description": ""
+          },
+          "roles": [
+            "admin"
+          ]
+        }
+      ],
+      "health": { },
+      "totalCapabilities": {},
+      "computeResources": [],
+      "storageResources": [
+        {
+          "shares": [
+            {
+              "id": {
+                "resourceType": "SHARE",
+                "name": "Share1",
+                "description": "",
+                "uoid": "HKBTBVGBJIB"
+              },
+              "uoid": "HKBTBVGBJIB",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              }
+            },
+            {
+              "id": {
+                "resourceType": "SHARE",
+                "name": "Share2",
+                "description": "",
+                "uoid": "POJIYGNJGTDF"
+              },
+              "uoid": "POJIYGNJGTDF",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              }
+            },
+            {
+              "id": {
+                "resourceType": "SHARE",
+                "name": "Share3",
+                "description": "",
+                "uoid": "XDSDTYUGUF"
+              },
+              "uoid": "XDSDTYUGUF",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              }
+            }
+          ],
+          "collections": [
+            {
+              "id": {
+                "resourceType": "COLLECTION",
+                "name": "Collection1",
+                "description": "",
+                "uoid": "KHVTYDGHBLJBG"
+              },
+              "uoid": "KHVTYDGHBLJBG",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              },
+              "capabilities": {
+                "capacities": {
+                  "objectUoid": "KHVTYDGHBLJBG",
+                  "totalMB": 388500,
+                  "availableMB": 998500,
+                  "usedMB": 618500,
+                  "otherMB": 0,
+                  "thresholds": [],
+                  "measurements": []
+                }
+              }
+            },
+            {
+              "id": {
+                "resourceType": "COLLECTION",
+                "name": "Collection2",
+                "description": "",
+                "uoid": "DSDHILMHNKLNJ"
+              },
+              "uoid": "DSDHILMHNKLNJ",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              },
+              "capabilities": {
+                "capacities": {
+                  "objectUoid": "DSDHILMHNKLNJ",
+                  "totalMB": 212345,
+                  "availableMB": 90000,
+                  "usedMB": 122345,
+                  "otherMB": 0,
+                  "thresholds": [],
+                  "measurements": []
+                }
+              }
+            }
+          ],
+          "storageGroups": [
+            {
+              "id": {
+                "resourceType": "STORAGE_GROUP",
+                "name": "StorageGroup1",
+                "description": "",
+                "uoid": "SBCVFFUBBVVF"
+              },
+              "uoid": "SBCVFFUBBVVF",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              },
+              "capabilities": {
+                "capacities": {
+                  "objectUoid": "SBCVFFUBBVVF",
+                  "totalMB": 212345,
+                  "availableMB": 90000,
+                  "usedMB": 122345,
+                  "otherMB": 0,
+                  "thresholds": [],
+                  "measurements": [
+                    {
+                      "metric": {
+                        "metricType": "CAPACITIES",
+                        "metricUnit": "MB",
+                        "metricFunction": "AVERAGE",
+                        "timeSpan": {
+                          "durationMs": 60000
+                        }
+                      },
+                      "values": [ 212345, 88000, 124345, 0 ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "nodes": [
+            {
+              "id": {
+                "resourceType": "NODE",
+                "name": "Node1",
+                "description": "",
+                "uoid": "LJGGFLKBNGGFG"
+              },
+              "uoid": "LJGGFLKBNGGFG",
+              "health": {
+                "status": "HEALTHY",
+                "disorders": []
+              },
+              "capabilities": {
+                "capacities": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0,
+                  "thresholds": [],
+                  "measurements": []
+                },
+                "bandwidths": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "readMBPerSecond": 345,
+                  "writeMBPerSecond": 45,
+                  "thresholds": [],
+                  "measurements": []
+                },
+                "operations": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "readPerSecond": 234,
+                  "writePerSecond": 23,
+                  "metaDataReadPerSecond": 345,
+                  "metaDataWritePerSecond": 45,
+                  "thresholds": [],
+                  "measurements": [
+                    {
+                      "metric": {
+                        "metricType": "OPERATIONS",
+                        "metricUnit": "OPS",
+                        "metricFunction": "RAW",
+                        "timeSpan": {
+                          "durationMs": 360000
+                        }
+                      },
+                      "values": [ 18885, 2840, 11305, 6125 ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "volumes": [
+            {
+              "id": {
+                "resourceType": "VOLUME",
+                "name": "Volume1",
+                "description": "",
+                "uoid": "NKUFDDFGUF"
+              },
+              "uoid": "NKUFDDFGUF",
+              "health": {
+                "status": "WARNING",
+                "disorders": [
+                  {
+                    "messageTemplate": "CAPACITY_WARNING_THRESHOLD",
+                    "data": [
+                      "90"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "filesystem": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0,
+                  "nonCompliantFiles": 3,
+                  "severelyNonCompliantFiles": 0
+                },
+                "capacities": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0,
+                  "thresholds": [
+                    {
+                      "metricUnit": "PERCENT",
+                      "warning": 80,
+                      "severe": 95,
+                      "warningCount": 4,
+                      "severeCount": 0,
+                      "timeSpan": {
+                        "durationMs": 360000
+                      }
+                    }
+                  ],
+                  "measurements": []
+                },
+                "bandwidths": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "readMBPerSecond": 345,
+                  "writeMBPerSecond": 45,
+                  "thresholds": [],
+                  "measurements": []
+                },
+                "operations": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "readPerSecond": 234,
+                  "writePerSecond": 23,
+                  "metaDataReadPerSecond": 345,
+                  "metaDataWritePerSecond": 45,
+                  "thresholds": [],
+                  "measurements": [
+                    {
+                      "metric": {
+                        "metricType": "OPERATIONS",
+                        "metricUnit": "OPS",
+                        "metricFunction": "RAW",
+                        "timeSpan": {
+                          "durationMs": 360000
+                        }
+                      },
+                      "values": [ 3205, 840, 1305, 625 ]
+                    }
+                  ]
+                },
+                "latencies": {
+                  "objectUoid": "NKUFDDFGUF",
+                  "readMs": 23,
+                  "writeMs": 45,
+                  "thresholds": [],
+                  "measurements": []
+                }
+              },
+              "mobility": {
+                "mobilityMeasures": [
+                  {
+                    "objectUoid": "NKUFDDFGUF",
+                    "direction": "TO",
+                    "partnerUoid": "SWDXCHUIKLPOH",
+                    "measurements": [
+                      {
+                        "metric": {
+                          "metricType": "CAPACITIES",
+                          "metricUnit": "MB",
+                          "timeSpan": {
+                            "durationMs": 60000
+                          },
+                          "metricFunction": "RAW"
+                        },
+                        "values": [
+                          28.3
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "mostActiveChildUoids": [
+                  "HKBTBVGBJIB"
+                ],
+                "leastActiveChildUoids": [
+                  "POJIYGNJGTDF",
+                  "XDSDTYUGUF"
+                ]
+              }
+            },
+            {
+              "id": {
+                "resourceType": "VOLUME",
+                "name": "Volume2",
+                "description": "",
+                "uoid": "NKUFDDFGUF"
+              },
+              "uoid": "SWDXCHUIKLPOH",
+              "health": {
+                "status": "WARNING",
+                "disorders": [
+                  {
+                    "messageTemplate": "CAPACITY_WARNING_THRESHOLD",
+                    "data": [
+                      "90"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "filesystem": {
+                  "objectUoid": "SWDXCHUIKLPOH",
+                  "totalInodes": 799999,
+                  "availableInodes": 780000,
+                  "usedInodes": 19999,
+                  "otherInodes": 0,
+                  "nonCompliantFiles": 3,
+                  "severelyNonCompliantFiles": 0
+                },
+                "capacities": {
+                  "objectUoid": "SWDXCHUIKLPOH",
+                  "totalMB": 15432,
+                  "availableMB": 10000,
+                  "usedMB": 5432,
+                  "otherMB": 0,
+                  "thresholds": [
+                    {
+                      "metricUnit": "PERCENT",
+                      "warning": 80,
+                      "severe": 95,
+                      "warningCount": 4,
+                      "severeCount": 0,
+                      "timeSpan": {
+                        "durationMs": 360000
+                      }
+                    }
+                  ],
+                  "measurements": []
+                },
+                "bandwidths": {
+                  "objectUoid": "SWDXCHUIKLPOH",
+                  "readMBPerSecond": 456,
+                  "writeMBPerSecond": 56,
+                  "thresholds": [],
+                  "measurements": []
+                },
+                "operations": {
+                  "objectUoid": "SWDXCHUIKLPOH",
+                  "readPerSecond": 341,
+                  "writePerSecond": 31,
+                  "metaDataReadPerSecond": 456,
+                  "metaDataWritePerSecond": 54,
+                  "thresholds": [],
+                  "measurements": [
+                    {
+                      "metric": {
+                        "metricType": "OPERATIONS",
+                        "metricUnit": "OPS",
+                        "metricFunction": "RAW",
+                        "timeSpan": {
+                          "durationMs": 360000
+                        }
+                      },
+                      "values": [ 3315, 530, 998, 231 ]
+                    }
+                  ]
+                },
+                "latencies": {
+                  "objectUoid": "SWDXCHUIKLPOH",
+                  "readMs": 28,
+                  "writeMs": 49,
+                  "thresholds": [],
+                  "measurements": []
+                }
+              },
+              "mobility": {
+                "mobilityMeasures": [
+                  {
+                    "objectUoid": "SWDXCHUIKLPOH",
+                    "direction": "TO",
+                    "partnerUoid": "NKUFDDFGUF",
+                    "measurements": [
+                      {
+                        "metric": {
+                          "metricType": "CAPACITIES",
+                          "metricUnit": "MB",
+                          "timeSpan": {
+                            "durationMs": 60000
+                          },
+                          "metricFunction": "RAW"
+                        },
+                        "values": [
+                          31.5
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "mostActiveChildUoids": [
+                  "HKBTBVGBJIB"
+                ],
+                "leastActiveChildUoids": [
+                  "POJIYGNJGTDF",
+                  "XDSDTYUGUF"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "activeUsers": [
+        {
+          "userId": {
+            "uoid": "1234aaaaaaaa5678",
+            "resourceType": "USER",
+            "name": "David Cheney",
+            "description": ""
+          },
+          "roles": [
+            "admin"
+          ]
+        }
+      ]
+    }
+  ]
+}

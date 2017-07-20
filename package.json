@@ -1,0 +1,21 @@
+{
+  "name": "api3",
+  "version": "3.0.0",
+  "author": "david.cheney@primarydata.com",
+  "description": "DataSphere GraphQL API",
+  "main": "api3.js",
+  "README": "",
+  "repository": {},
+  "license": {},
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.6",
+    "graphql": "^0.10.3",
+    "lodash": "^4.17.4",
+    "subscriptions-transport-ws": "^0.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./api3.js"
+  }
+}
