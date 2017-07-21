@@ -1,0 +1,568 @@
+#################  queries - click the RUN arrow above.  ##################
+#################    use in the browser with GraphiQL    ##################
+
+query GetShares {
+  share {
+    ...StorageResource
+  }
+}
+
+query GetShare($uoid:String) {
+  share(uoid:$uoid) {
+    ...StorageResource
+  }
+}
+
+query GetFileSystems {
+  storage {
+    id {
+      description
+    }
+    volumes {
+      capabilities {
+        filesystem {
+          ...Filesystem
+        }
+      }
+    }
+  }
+}
+
+query GetVolumeCapabilities {
+  storage {
+    ...StorageVolumeCapabilities
+  }
+}
+
+query GetVolumeNames {
+  storage {
+    volumes {
+      id {
+        name
+      }
+    }
+  }
+}
+
+query GetVolumes {
+  storage {
+    ...StorageVolumes
+  }
+}
+
+query GetNodes {
+  storage {
+    nodes {
+      ...StorageResource
+    }
+  }
+}
+
+query GetStorageGroups {
+  storage {
+    storageGroups {
+      ...StorageResource
+    }
+  }
+}
+
+query GetStorageResources {
+  storage {
+    ...StorageResources
+  }
+}
+
+query GetStorageResourcesOfType($type:ResourceType) {
+  resourcesOfType(resourceType:$type) {
+    ...StorageResource
+  }
+}
+
+
+##### Files
+
+query GetFiles ($fileType:FileType=FILE) {
+  files(type:$fileType) {
+    ...PDFile
+  }
+}
+
+query GetFileStats {
+  filesStats(inode:0) {
+    name
+    tags
+    columns
+    rows {
+      inode
+      clientId
+      avgIops
+      time
+    }
+  }
+}
+
+
+##### DataSphere
+
+query DataSpheres {
+  dataSphere {
+    admins {
+      userId {
+        name
+      }
+    }
+    virtualDataSpheres {
+      id {
+        name
+        uoid
+      }
+    }
+  }
+}
+
+query DataSphere {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+      location
+      admins {
+        ...UserAuth
+      }
+      health {
+        ...Health
+      }
+      capabilities {
+        ...Capabilities
+      }
+      computeResources {
+        cpu
+      }
+      communicationResources {
+        networkInterfaces {
+          ...NetworkInterface
+        }
+      }
+      storageResources {
+        ...StorageResources
+      }
+    }
+  }
+}
+
+query DataSphereHealth {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+      health {
+        ...Health
+      }
+    }
+  }
+}
+
+query DataSphereCapabilities {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+			capabilities {
+        ...Capabilities
+      }
+    }
+  }
+}
+
+query DataSphereStorage {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+	      ...ResourceId
+       }
+      storageResources {
+        ...StorageResources
+      }
+    }
+  }
+}
+
+
+query DataSphereActivity {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+      health {
+        ...Health
+      }
+    }
+  }
+}
+
+
+##### Users
+
+query GetUsers {
+  users {
+    name
+    id
+  }
+}
+
+query GetUser ($userId:Int) {
+  users(id:$userId) {
+    name
+  }
+}
+
+query GetUserFiles ($userId:Int) {
+  users(id:$userId) {
+    name
+    files {
+      ...FilePath
+    }
+  }
+}
+
+
+##### Events and Tasks.
+
+query GetEvents {
+  events {
+    severity
+    type
+    params
+  }
+}
+
+query GetTasks {
+  tasks {
+    name
+    paramsMapJson
+    created
+    started
+    status
+    progress
+    exitValue
+  }
+}
+
+
+##### etc.
+
+query GetActivity {
+  activity {
+    ...Activity
+  }
+}
+
+query GetCapacity ($skipMoeBreakdowns:Boolean=false) {
+  capacity {
+    max
+    ...MoeData @skip(if:$skipMoeBreakdowns)
+  }
+}
+
+query GetPerformance ($skipMoeBreakdowns:Boolean=false) {
+  performance {
+    max
+    ...MoeData @skip(if:$skipMoeBreakdowns)
+  }
+}
+
+query GetAlignment ($skipMoeBreakdowns:Boolean=false) {
+  alignment {
+    max
+    ...MoeData @skip(if:$skipMoeBreakdowns)
+  }
+}
+
+
+
+##########  fragments are not queryable  ########################################
+
+fragment StorageResources on StorageResources {
+  shares {
+    ...StorageResource
+  }
+  collections {
+    ...StorageResource
+  }
+  storageGroups {
+    ...StorageResource
+  }
+  nodes {
+    ...StorageResource
+  }
+  volumes {
+    ...StorageResource
+  }
+}
+
+fragment StorageResource on StorageResource {
+  id {
+    ...ResourceId
+  }
+  health {
+    ...Health
+  }
+  capabilities {
+    ...Capabilities
+  }
+  mobility {
+    ...Mobility
+  }
+}
+
+fragment StorageVolumes on StorageResources {
+  volumes {
+    ...StorageResource
+  }
+}
+
+fragment StorageVolumeCapabilities on StorageResources {
+  volumes {
+    id {
+      ...ResourceId
+    }
+    capabilities {
+      ...Capabilities
+    }
+  }
+}
+
+fragment Capabilities on StorageCapabilities {
+  filesystem {
+	  ...Filesystem
+  }
+	capacities {
+		...Capacities
+  }
+  bandwidths {
+    ...Bandwidths
+  }
+  operations {
+    ...Operations
+  }
+  latencies {
+    ...Latencies
+  }
+}
+
+fragment Filesystem on FilesystemCapabilities {
+  totalInodes
+  availableInodes
+  usedInodes
+  otherInodes
+  nonCompliantFiles
+  severelyNonCompliantFiles
+}
+
+fragment Capacities on Capacities {
+  totalMB
+  availableMB
+  usedMB
+  otherMB
+  thresholds {
+    ...Threshold
+  }
+  measurements {
+    ...Measurement
+  }
+}
+
+fragment Bandwidths on Bandwidths {
+  readMBPerSecond
+  writeMBPerSecond
+  thresholds {
+    ...Threshold
+  }
+  measurements {
+    ...Measurement
+  }
+}
+
+fragment Operations on Operations {
+  readPerSecond
+  writePerSecond
+  metaDataReadPerSecond
+  metaDataWritePerSecond
+  thresholds {
+    ...Threshold
+  }
+  measurements {
+    ...Measurement
+  }
+}
+
+fragment Latencies on Latencies {
+  readMs
+  writeMs
+  thresholds {
+    ...Threshold
+  }
+  measurements {
+    ...Measurement
+  }
+}
+
+fragment Threshold on Threshold {
+  unit
+  timeSpan {
+    ...TimeSpan
+  }
+  warningCount
+  severeCount
+}
+
+fragment PDFile on File {
+    type
+    ...FilePath
+    permanentDataLoss
+    profileName
+    ...FilePermissions
+}
+
+fragment FilePath on File {
+  path
+  shareName
+  sharePath
+}
+
+fragment FilePermissions on File {
+  readable
+  writable
+  executable
+}
+
+fragment UserAuth on UserAuth {
+  userId {
+    name
+  }
+  roles
+}
+
+fragment Health on Health {
+  status
+  disorders {
+    ...UserMessage
+  }
+}
+
+fragment UserMessage on UserMessage {
+    severity
+    messageTemplate
+    data
+}
+
+fragment Activity on Activity {
+  storageResource {
+    id {
+      description
+    }
+  }
+  timestamp
+  maxReadOps
+  maxWriteOps
+}
+
+fragment Mobility on DataMobility {
+  mobilityMeasures {
+    ...MobilityMeasure
+  }
+  mostActiveChildUoids
+  leastActiveChildUoids
+}
+
+fragment MobilityMeasure on MobilityMeasure {
+  objectUoid
+  direction
+  partnerUoid
+  measurements {
+    ...Measurement
+  }
+}
+
+fragment Measurement on Measurement {
+  metric {
+    ...Metric
+  }
+  values
+}
+
+fragment Metric on Metric {
+  metricType
+  metricUnit
+  metricFunction
+  timeSpan {
+    ...TimeSpan
+  }
+}
+
+fragment TimeSpan on TimeSpan {
+  startMs
+  endMs
+  durationMs
+}
+
+fragment MoeData on moeData {
+    breakdown {
+      share
+      storageContainer
+      data
+    }
+}
+
+fragment NetworkInterface on NetworkInterface {
+  id {
+    ...ResourceId
+  }
+  nodeId {
+    ...ResourceId
+  }
+  bandwidths {
+    readMBPerSecond
+    writeMBPerSecond
+  }
+}
+
+fragment ResourceId on ResourceId {
+	resourceType
+  name
+  description
+#  uoid
+}
+
+
+
+##################  introspection  ############################################
+
+query GetSchema {
+  __schema {
+    types {
+      name
+      description
+    }
+  }
+}
+
+query GetFileTypes {
+  __type(name:"File") {
+    name
+    description
+    kind
+    fields{
+      name
+      description
+      type {
+        name
+        description
+      }
+    }
+  }
+}

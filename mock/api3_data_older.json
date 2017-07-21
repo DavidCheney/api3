@@ -1,0 +1,1335 @@
+{
+  "admins": [
+    {
+      "userId": {
+        "uoid": "1234aaaaaaaa5678",
+        "type": "USER",
+        "name": "David Cheney",
+        "description": ""
+      },
+      "roles": [
+        "admin"
+      ]
+    }
+  ],
+  "virtualDataSpheres": [
+    {
+      "id": {
+        "uoid": "ds2ds2ds2ds2ds2ds2",
+        "type": "VIRTUAL_DATASPHERE",
+        "name": "DataSphere2",
+        "description": ""
+      },
+      "location": "",
+      "admins": [
+        {
+          "userId": {
+            "uoid": "1234ssssssss5678",
+            "type": "USER",
+            "name": "Simeon Lee",
+            "description": ""
+          },
+          "roles": [
+            "admin",
+            "wizard"
+          ]
+        }
+      ]
+    },
+    {
+      "id": {
+        "uoid": "ds1ds1ds1ds1ds1ds1",
+        "type": "VIRTUAL_DATASPHERE",
+        "name": "DataSphere1",
+        "description": ""
+      },
+      "location": "",
+      "admins": [
+        {
+          "userId": {
+            "uoid": "1234ssssssss5678",
+            "type": "USER",
+            "name": "Simeon Lee",
+            "description": ""
+          },
+          "roles": [
+            "admin",
+            "wizard"
+          ]
+        },
+        {
+          "userId": {
+            "uoid": "1234aaaaaaaa5678",
+            "type": "USER",
+            "name": "David Cheney",
+            "description": ""
+          },
+          "roles": [
+            "admin"
+          ]
+        }
+      ],
+      "health": {
+        "capacityHealth": [
+          {
+            "messageTemplate": "MSG1",
+            "data": [
+              "data1",
+              "data2"
+            ]
+          }
+        ],
+        "performanceHealth": [
+          {
+            "messageTemplate": "MSG1",
+            "data": [
+              "data1",
+              "data2"
+            ]
+          }
+        ],
+        "storageAlignment": [
+          {
+            "messageTemplate": "MSG1",
+            "data": [
+              "data1",
+              "data2"
+            ]
+          }
+        ]
+      },
+      "capabilities": {
+        "files": {
+          "totalInodes": 782345,
+          "availableInodes": 780000,
+          "usedInodes": 2345,
+          "otherInodes": 0
+        },
+        "capacities": {
+          "totalMB": 12345,
+          "availableMB": 10000,
+          "usedMB": 2345,
+          "otherMB": 0
+        },
+        "bandwidths": {
+          "ReadMBPerSecond": 345,
+          "WriteMBPerSecond": 45,
+          "averages": {}
+        },
+        "operations": {
+          "ReadPerSecond": 234,
+          "WritePerSecond": 23,
+          "MetaDataReadPerSecond": 345,
+          "MetaDataWritePerSecond": 45,
+          "averages": {
+            "timeSpan": "DAY",
+            "data": {
+              "ReadPerSecond": 305,
+              "WritePerSecond": 40,
+              "MetaDataReadPerSecond": 305,
+              "MetaDataWritePerSecond": 65
+            }
+          }
+        },
+        "latencies": {
+          "ReadMs": 23,
+          "WriteMs": 45,
+          "averages": {}
+        }
+      },
+      "mostActiveChildren": [
+        {
+          "id": {
+            "uoid": "Share5678",
+            "type": "SHARE",
+            "name": "David Cheney",
+            "description": ""
+          },
+          "utilization": {
+            "files": {
+              "totalInodes": 782345,
+              "availableInodes": 780000,
+              "usedInodes": 2345,
+              "otherInodes": 0
+            },
+            "capacities": {
+              "totalMB": 12345,
+              "availableMB": 10000,
+              "usedMB": 2345,
+              "otherMB": 0
+            },
+            "bandwidths": {
+              "ReadMBPerSecond": 345,
+              "WriteMBPerSecond": 45,
+              "averages": {}
+            },
+            "operations": {
+              "ReadPerSecond": 234,
+              "WritePerSecond": 23,
+              "MetaDataReadPerSecond": 345,
+              "MetaDataWritePerSecond": 45,
+              "averages": {
+                "timeSpan": "DAY",
+                "data": {
+                  "ReadPerSecond": 305,
+                  "WritePerSecond": 40,
+                  "MetaDataReadPerSecond": 305,
+                  "MetaDataWritePerSecond": 65
+                }
+              }
+            },
+            "latencies": {
+              "ReadMs": 23,
+              "WriteMs": 45,
+              "averages": {}
+            }
+          }
+        }
+      ],
+      "leastActiveChildren": [
+        {
+          "id": {
+            "uoid": "vvvvvvvv5678",
+            "type": "VOLUME",
+            "name": "Volume1",
+            "description": ""
+          },
+          "utilization": {
+            "files": {
+              "totalInodes": 782345,
+              "availableInodes": 780000,
+              "usedInodes": 2345,
+              "otherInodes": 0
+            },
+            "capacities": {
+              "totalMB": 12345,
+              "availableMB": 10000,
+              "usedMB": 2345,
+              "otherMB": 0
+            },
+            "bandwidths": {
+              "ReadMBPerSecond": 345,
+              "WriteMBPerSecond": 45,
+              "averages": {}
+            },
+            "operations": {
+              "ReadPerSecond": 234,
+              "WritePerSecond": 23,
+              "MetaDataReadPerSecond": 345,
+              "MetaDataWritePerSecond": 45,
+              "averages": {
+                "timeSpan": "DAY",
+                "data": {
+                  "ReadPerSecond": 305,
+                  "WritePerSecond": 40,
+                  "MetaDataReadPerSecond": 305,
+                  "MetaDataWritePerSecond": 65
+                }
+              }
+            },
+            "latencies": {
+              "ReadMs": 23,
+              "WriteMs": 45,
+              "averages": {}
+            }
+          }
+        }
+      ],
+      "computeResources": [
+        {}
+      ],
+      "storageResources": [
+        {
+          "shares": [
+            {
+              "id": {
+                "uoid": "share0share0share0",
+                "type": "SHARE",
+                "name": "Share1",
+                "description": ""
+              },
+              "health": {
+                "capacityHealth": [
+                  {
+                    "messageTemplate": "CAPACITY_THRESHOLD_EXCEEDED",
+                    "data": [
+                      "Share 0",
+                      "90%"
+                    ]
+                  }
+                ],
+                "performanceHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "Share 0",
+                      "data2"
+                    ]
+                  }
+                ],
+                "storageAlignment": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "Share 0",
+                      "data2"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "utilization": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "mostActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "SHARE",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ],
+              "leastActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "SHARE",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "collections": [
+            {
+              "id": {
+                "uoid": "1234aaaaaaaa5678",
+                "type": "COLLECTION",
+                "name": "Collection1",
+                "description": ""
+              },
+              "health": {
+                "capacityHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "performanceHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "storageAlignment": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "utilization": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "mostActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "COLLECTION",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ],
+              "leastActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "COLLECTION",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "storageGroups": [
+            {
+              "id": {
+                "uoid": "1234aaaaaaaa5678",
+                "type": "STORAGE_GROUP",
+                "name": "StorageGroup1",
+                "description": ""
+              },
+              "health": {
+                "capacityHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "performanceHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "storageAlignment": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "utilization": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "mostActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "STORAGE_GROUP",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ],
+              "leastActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "STORAGE_GROUP",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "nodes": [
+            {
+              "id": {
+                "uoid": "1234aaaaaaaa5678",
+                "type": "NODE",
+                "name": "Node1",
+                "description": ""
+              },
+              "health": {
+                "capacityHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "performanceHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "storageAlignment": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "utilization": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "mostActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "NODE",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ],
+              "leastActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "NODE",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "volumes": [
+            {
+              "id": {
+                "uoid": "1234aaaaaaaa5678",
+                "type": "VOLUME",
+                "name": "Volume1",
+                "description": ""
+              },
+              "health": {
+                "capacityHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "performanceHealth": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ],
+                "storageAlignment": [
+                  {
+                    "messageTemplate": "MSG1",
+                    "data": [
+                      "data1",
+                      "data2"
+                    ]
+                  }
+                ]
+              },
+              "capabilities": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "utilization": {
+                "files": {
+                  "totalInodes": 782345,
+                  "availableInodes": 780000,
+                  "usedInodes": 2345,
+                  "otherInodes": 0
+                },
+                "capacities": {
+                  "totalMB": 12345,
+                  "availableMB": 10000,
+                  "usedMB": 2345,
+                  "otherMB": 0
+                },
+                "bandwidths": {
+                  "ReadMBPerSecond": 345,
+                  "WriteMBPerSecond": 45,
+                  "averages": {}
+                },
+                "operations": {
+                  "ReadPerSecond": 234,
+                  "WritePerSecond": 23,
+                  "MetaDataReadPerSecond": 345,
+                  "MetaDataWritePerSecond": 45,
+                  "averages": {
+                    "timeSpan": "DAY",
+                    "data": {
+                      "ReadPerSecond": 305,
+                      "WritePerSecond": 40,
+                      "MetaDataReadPerSecond": 305,
+                      "MetaDataWritePerSecond": 65
+                    }
+                  }
+                },
+                "latencies": {
+                  "ReadMs": 23,
+                  "WriteMs": 45,
+                  "averages": {}
+                }
+              },
+              "mostActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "VOLUME",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ],
+              "leastActiveChildren": [
+                {
+                  "id": {
+                    "uoid": "1234aaaaaaaa5678",
+                    "type": "VOLUME",
+                    "name": "David Cheney",
+                    "description": ""
+                  },
+                  "utilization": {
+                    "files": {
+                      "totalInodes": 782345,
+                      "availableInodes": 780000,
+                      "usedInodes": 2345,
+                      "otherInodes": 0
+                    },
+                    "capacities": {
+                      "totalMB": 12345,
+                      "availableMB": 10000,
+                      "usedMB": 2345,
+                      "otherMB": 0
+                    },
+                    "bandwidths": {
+                      "ReadMBPerSecond": 345,
+                      "WriteMBPerSecond": 45,
+                      "averages": {}
+                    },
+                    "operations": {
+                      "ReadPerSecond": 234,
+                      "WritePerSecond": 23,
+                      "MetaDataReadPerSecond": 345,
+                      "MetaDataWritePerSecond": 45,
+                      "averages": {
+                        "timeSpan": "DAY",
+                        "data": {
+                          "ReadPerSecond": 305,
+                          "WritePerSecond": 40,
+                          "MetaDataReadPerSecond": 305,
+                          "MetaDataWritePerSecond": 65
+                        }
+                      }
+                    },
+                    "latencies": {
+                      "ReadMs": 23,
+                      "WriteMs": 45,
+                      "averages": {}
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "activeUsers": [
+        {
+          "userId": {
+            "uoid": "1234aaaaaaaa5678",
+            "type": "USER",
+            "name": "David Cheney",
+            "description": ""
+          },
+          "roles": [
+            "admin"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,40 +2,61 @@
 
 // david.cheney@primarydata.com
 
-var express = require('express');
-var graphqlHTTP = require('express-graphql');
-var { buildSchema, GraphQLScalarType } = require('graphql');
-var { execute, subscribe } = require('graphql');
+const express = require('express');
+const graphqlHTTP = require('express-graphql');
+const {buildSchema, GraphQLScalarType} = require('graphql');
+const {execute, subscribe} = require('graphql');
 
-var { PubSub } = require('graphql-subscriptions');
-var { createServer } = require('http');
-var { SubscriptionServer } = require('subscriptions-transport-ws');
-var { Kind } = require('graphql/language');
+const {PubSub} = require('graphql-subscriptions');
+const {createServer} = require('http');
+const {SubscriptionServer} = require('subscriptions-transport-ws');
+const {Kind} = require('graphql/language');
 
 ///// data schema
 
-// var { types } = require('./schemas/types.js');
-var { types } = require('./schemas/amdb.js');
+// const { types } = require('./schemas/types.js');
+const {types} = require('./schemas/api3.js');
 
-var schema = buildSchema(types);
+const schema = buildSchema(types);
 
 
 ///// query resolvers
 
-let root = { 
-  hello: () => 'Hello world!', 
-  dataSphere: () => dataSphere,
-  users: () => users,
-  user:  (args) => { return find( users, { id: args.id } ); },
-  files: (args) => { return find( files, { type: args.type } ) },
-  filesStats: () => filesStats,
-  events: () => events,
-  storage: () => { return storageResources; },
-  tasks: () => { return convertObjectsFieldToJson(tasks, 'paramsMap'); },
-  activity: (args) => { return find( activity, { id: args.id } ); },
-  alignment: () => alignment,
-  performance: () => performance,
-  capacity: () => capacity
+let root = {
+    hello: () => 'Hello world!',
+    dataSphere: () => dataSphere,
+    users: (args) => {
+        return find(users, {id: args.id});
+    },
+    files: (args) => {
+        return find(files, {type: args.type})
+    },
+    filesStats: () => filesStats,
+    events: () => events,
+    storage: () => {
+        return storageResources;
+    },
+    share: (args) => {
+        return find(storageResources[0].shares, {uoid: args.uoid})
+    },
+    resourcesOfType: (args) => {
+        let resourceType = args.resourceType ? args.resourceType : "volume";
+        resourceType = resourceType.toLowerCase() + 's';
+        // TODO: convert camel_case to camelCase for STORAGE_GROUP
+        return storageResources[0][resourceType];
+    },
+    // findStorageResources: (args) => {
+    //     return findDescendents(storageResources, {uoid: args.uoid})
+    // },
+    tasks: () => {
+        return convertObjectsFieldToJson(tasks, 'paramsMap');
+    },
+    activity: (args) => {
+        return find(activity, {id: args.id});
+    },
+    alignment: () => alignment,
+    performance: () => performance,
+    capacity: () => capacity
 };
 
 
@@ -55,90 +76,94 @@ const dataSphere = require('./mock/api3_data.json');
 const storageResources = dataSphere.virtualDataSpheres[1].storageResources;
 
 let users = [
-  { id:1, name:"Dave" },
-  { id:2, name:"Chuck", files:files, filesStats:[] },
-  { id:3, name:"Victoria", files:[], filesStats:filesStats },
-  { id:4, name:"Simeon", date:1499895679, files:files, filesStats:filesStats },
-  { id:5, name:"Paul", files:[], filesStats:[] },
-  { id:6, name:"Mary", files:null, filesStats:null },
-  { id:7, name:"Ted" }
+    {id: 1, name: "Dave"},
+    {id: 2, name: "Chuck", files: files, filesStats: []},
+    {id: 3, name: "Victoria", files: [], filesStats: filesStats},
+    {id: 4, name: "Simeon", date: 1499895679, files: files, filesStats: filesStats},
+    {id: 5, name: "Paul", files: [], filesStats: []},
+    {id: 6, name: "Mary", files: null, filesStats: null},
+    {id: 7, name: "Ted"}
 ];
 
 
 ///// private methods
 
+// return the entire array if the kv_pair is missing or invalid
 function find(array, kv_pair) {
-  if (! kv_pair || ! Object.keys(kv_pair) || ! Object.keys(kv_pair)[0]) {
-    return array;
-  }
-  if (Object.keys(kv_pair)[0] === 'id' && Object.values(kv_pair)[0] === -1) {
-    return array;
-  }
-  if (Object.keys(kv_pair)[0] === 'type' && Object.values(kv_pair)[0] === "ALL") {
-    return array;
-  }
-  let matches = [];
-  let key = Object.keys(kv_pair)[0];
-  let value = Object.values(kv_pair)[0];
-  // console.log("find", kv_pair);
-  for (var i = 0; i < array.length; i++) {
-    if (array[i][key] && array[i][key] === value) {
-      matches.push(array[i]);
+    console.log("find", kv_pair);
+    if (!kv_pair || !Object.keys(kv_pair)[0] || !Object.values(kv_pair)[0]) {
+        return array;
     }
-  }  
-  return matches;
+    if (Object.keys(kv_pair)[0] === 'id' && Object.values(kv_pair)[0] === -1) {
+        return array;
+    }
+    if (Object.keys(kv_pair)[0] === 'type' && Object.values(kv_pair)[0] === "ALL") {
+        return array;
+    }
+    let matches = [];
+    let key = Object.keys(kv_pair)[0];
+    let value = Object.values(kv_pair)[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i][key] && array[i][key] === value) {
+            matches.push(array[i]);
+        }
+    }
+    return matches;
 }
 
 function delayedFind(array, kv_pair) {
-  // this was used to test stacked requests, parallel server processing,
-  // and out of order response handling.  The results: stacked requests and 
-  // parallel server processing work as expected; graphiql does not show 
-  // multiple query responses.
-  return new Promise((resolve, reject) => {
-    console.log("promise",kv_pair);
-    setTimeout(() => { 
-      console.log("resolve",kv_pair); 
-      resolve(find ( array, kv_pair ));
-    }, getRandomInt(4,9) * 1000)
-  })
+    // this was used to test stacked requests, parallel server processing,
+    // and out of order response handling.  The results: stacked requests and
+    // parallel server processing work as expected; graphiql does not show
+    // multiple query responses.
+    return new Promise((resolve, reject) => {
+        console.log("promise", kv_pair);
+        setTimeout(() => {
+            console.log("resolve", kv_pair);
+            resolve(find(array, kv_pair));
+        }, getRandomInt(4, 9) * 1000)
+    })
 }
 
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
 function convertObjectsFieldToJson(array, field) {
-  for (var i = 0; i < array.length; i++) {
-    var record = array[i];
-    if (! array[i][field]) { continue };
-    var object = array[i][field];
-    var json = null;
-    try {
-      json = JSON.stringify(object);
-    } catch (err) {
-      console.error("convertObjectsFieldToJson error on objectof type " + typeof object, err);
-      continue;
+    for (let i = 0; i < array.length; i++) {
+        let record = array[i];
+        if (!array[i][field]) {
+            continue
+        }
+        ;
+        let object = array[i][field];
+        let json = null;
+        try {
+            json = JSON.stringify(object);
+        } catch (err) {
+            console.error("convertObjectsFieldToJson error on objectof type " + typeof object, err);
+            continue;
+        }
+        if (json) {
+            let newField = field + "Json";
+            array[i][newField] = json;
+            // console.log("convertObjectsFieldToJson result", json);
+        }
     }
-    if (json) {
-      var newField = field + "Json";
-      array[i][newField] = json;
-      // console.log("convertObjectsFieldToJson result", json);
-    }
-  }
-  return array;
+    return array;
 }
 
 
 ///// server
 
-var app = express();
+const app = express();
 
 app.use('/graphql', graphqlHTTP({
-  schema: schema,
-  rootValue: root,
-  graphiql: true,
+    schema: schema,
+    rootValue: root,
+    graphiql: true,
 }));
 
 app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
@@ -173,14 +198,14 @@ app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
 //  }
 
 
-// var GraphQLPercent = exports.GraphQLPercent = new GraphQLScalarType({
+// const GraphQLPercent = exports.GraphQLPercent = new GraphQLScalarType({
 //   name: 'Percent',
 //   description: 'The `Percent` scalar type represents Integer values between 1 and 100. ',
 //   serialize: coercePercent,
 //   parseValue: coercePercent,
 //   parseLiteral: function parseLiteral(ast) {
 //     if (ast.kind === Kind.INT) {
-//       var num = parseInt(ast.value, 10);
+//       let num = parseInt(ast.value, 10);
 //       if (num <= MAX_INT && num >= MIN_INT) {
 //         return num;
 //       }
@@ -193,11 +218,11 @@ app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
 //   if (value === '') {
 //     throw new TypeError('Percent cannot represent non 32-bit signed integer value: (empty string)');
 //   }
-//   var num = Number(value);
+//   let num = Number(value);
 //   if (num !== num || num > 100 || num < 0) {
 //     throw new TypeError('Percent cannot represent non 32-bit signed integer value: ' + String(value));
 //   }
-//   var percent = Math.floor(num);
+//   let percent = Math.floor(num);
 //   if (percent !== num) {
 //     throw new TypeError('Percent cannot represent non-integer value: ' + String(value));
 //  }
@@ -230,8 +255,8 @@ app.listen(4000, () => console.log('Now browse to localhost:4000/graphql'));
 //   },
 // );
 // 
-// // var GraphQLPercent = exports.GraphQLPercent = new GraphQLScalarType({
-// var dateTime = exports.DateTime = new GraphQLScalarType({
+// // const GraphQLPercent = exports.GraphQLPercent = new GraphQLScalarType({
+// const dateTime = exports.DateTime = new GraphQLScalarType({
 //       name: 'DateTime',
 //       description: 'Date custom scalar type',
 //       parseValue(value) {

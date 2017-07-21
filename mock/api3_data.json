@@ -75,6 +75,13 @@
       "computeResources": [],
       "storageResources": [
         {
+          "uoid": "ds2ds2ds2ds2ds2ds2",
+          "id": {
+            "uoid": "ds2ds2ds2ds2ds2ds2",
+            "resourceType": "VIRTUAL_DATASPHERE",
+            "name": "DataSphere2",
+            "description": ""
+          },
           "shares": [
             {
               "id": {
@@ -297,8 +304,8 @@
                   "thresholds": [
                     {
                       "metricUnit": "PERCENT",
-                      "warning": 80,
-                      "severe": 95,
+                      "warningLimit": 80,
+                      "severeLimit": 95,
                       "warningCount": 4,
                       "severeCount": 0,
                       "timeSpan": {
@@ -414,8 +421,8 @@
                   "thresholds": [
                     {
                       "metricUnit": "PERCENT",
-                      "warning": 80,
-                      "severe": 95,
+                      "warningLimit": 80,
+                      "severeLimit": 95,
                       "warningCount": 4,
                       "severeCount": 0,
                       "timeSpan": {
