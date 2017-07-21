@@ -104,10 +104,10 @@ function find(array, kv_pair) {
     let matches = [];
     for (let i = 0; i < array.length; i++) {
         if (key === 'id' && array[i][key] && array[i][key]['uoid'] === value) {
-            console.log("find matched id.uoid", array[i]);
+            // console.log("find matched id.uoid", array[i]);
             matches.push(array[i]);
         } else if (array[i][key] && array[i][key] === value) {
-            console.log("find matched " + key, array[i]);
+            // console.log("find matched " + key, array[i]);
             matches.push(array[i]);
         }
     }

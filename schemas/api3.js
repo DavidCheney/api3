@@ -44,7 +44,9 @@ exports.types = `
 
   ##### A DataSphere and VirtualDataSphere.
   
-  type DataSphere {
+  type DataSphere implements ResourceInterface {
+    uoid: String!
+    id: ResourceId!
     admins: [UserAuth],
     virtualDataSpheres: [VirtualDataSphere]
   }
