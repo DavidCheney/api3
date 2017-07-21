@@ -24,7 +24,10 @@ const schema = buildSchema(types);
 
 let root = {
     hello: () => 'Hello world!',
-    dataSphere: () => dataSphere,
+    dataSphere: (args) => dataSphere,
+    virtualDataSphere: (args) => {
+        return find(dataSphere.virtualDataSpheres, {uoid: args.uoid});
+    },
     users: (args) => {
         return find(users, {id: args.id});
     },
@@ -90,21 +93,21 @@ let users = [
 
 // return the entire array if the kv_pair is missing or invalid
 function find(array, kv_pair) {
-    console.log("find", kv_pair);
+    // console.log("find", kv_pair, array);
     if (!kv_pair || !Object.keys(kv_pair)[0] || !Object.values(kv_pair)[0]) {
         return array;
     }
-    if (Object.keys(kv_pair)[0] === 'id' && Object.values(kv_pair)[0] === -1) {
-        return array;
-    }
-    if (Object.keys(kv_pair)[0] === 'type' && Object.values(kv_pair)[0] === "ALL") {
-        return array;
-    }
-    let matches = [];
     let key = Object.keys(kv_pair)[0];
     let value = Object.values(kv_pair)[0];
+    if (key === 'uoid' && value === "") { return array; }
+    if (key === 'type' && value === "ALL") { return array; }
+    let matches = [];
     for (let i = 0; i < array.length; i++) {
-        if (array[i][key] && array[i][key] === value) {
+        if (key === 'id' && array[i][key] && array[i][key]['uoid'] === value) {
+            console.log("find matched id.uoid", array[i]);
+            matches.push(array[i]);
+        } else if (array[i][key] && array[i][key] === value) {
+            console.log("find matched " + key, array[i]);
             matches.push(array[i]);
         }
     }

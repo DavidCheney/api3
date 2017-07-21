@@ -34,7 +34,19 @@
             "wizard"
           ]
         }
-      ]
+      ],
+      "health": {
+        "status": "WARNING",
+        "disorders": [
+          {
+            "messageTemplate": "CAPACITY_WARNING_THRESHOLD",
+            "severity": "WARNING",
+            "data": [
+              "90"
+            ]
+          }
+        ]
+      }
     },
     {
       "uoid": "ds1ds1ds1ds1ds1ds1",
@@ -70,14 +82,17 @@
           ]
         }
       ],
-      "health": { },
-      "totalCapabilities": {},
+      "health": {
+        "status": "HEALTHY",
+        "disorders": []
+      },
       "computeResources": [],
+      "communicationResources": [],
       "storageResources": [
         {
-          "uoid": "ds2ds2ds2ds2ds2ds2",
+          "uoid": "ds1ds1ds1ds1ds1ds1",
           "id": {
-            "uoid": "ds2ds2ds2ds2ds2ds2",
+            "uoid": "ds1ds1ds1ds1ds1ds1",
             "resourceType": "VIRTUAL_DATASPHERE",
             "name": "DataSphere2",
             "description": ""
@@ -204,10 +219,46 @@
                           "durationMs": 60000
                         }
                       },
-                      "values": [ 212345, 88000, 124345, 0 ]
+                      "values": [
+                        212345,
+                        88000,
+                        124345,
+                        0
+                      ]
                     }
                   ]
                 }
+              },
+              "mobility": {
+                "mobilityMeasures": [
+                  {
+                    "objectUoid": "SWDXCHUIKLPOH",
+                    "direction": "TO",
+                    "partnerUoid": "NKUFDDFGUF",
+                    "measurements": [
+                      {
+                        "metric": {
+                          "metricType": "CAPACITIES",
+                          "metricUnit": "MB",
+                          "timeSpan": {
+                            "durationMs": 60000
+                          },
+                          "metricFunction": "RAW"
+                        },
+                        "values": [
+                          31.5
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "mostActiveChildUoids": [
+                  "HKBTBVGBJIB"
+                ],
+                "leastActiveChildUoids": [
+                  "POJIYGNJGTDF",
+                  "XDSDTYUGUF"
+                ]
               }
             }
           ],

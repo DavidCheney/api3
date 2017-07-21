@@ -1,14 +1,113 @@
-#################  queries - click the RUN arrow above.  ##################
-#################    use in the browser with GraphiQL    ##################
+#################    use in the browser with GraphiQL    ################
+#################  queries - click the RUN arrow above.  ################
+##############  Query Variables at the bottom of the file  ##############
+
+
+##### DataSphere
+
+query VirtualPrivateDataSphereMeta {
+  dataSphere {
+    admins {
+      ...UserAuth
+    }
+    virtualDataSpheres {
+      id {
+        name
+        uoid
+      }
+      admins {
+				...UserAuth
+      }
+    }
+  }
+}
+
+query VPDS_Healths {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+      health {
+        ...Health
+      }
+    }
+  }
+}
+
+# parameterized query on a specific VPDS
+query DataSphere($vpdsUoid:String) {
+  virtualDataSphere(uoid:$vpdsUoid) {
+    id {
+      ...ResourceId
+    }
+    location
+    admins {
+      ...UserAuth
+    }
+    health {
+      ...Health
+    }
+    computeResources {
+      cpu
+    }
+    communicationResources {
+      networkInterfaces {
+        ...NetworkInterface
+      }
+    }
+    storageResources {
+      ...StorageResources
+    }
+  }
+}
+
+query VPDS_Resources {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+	      ...ResourceId
+       }
+      storageResources {
+        ...StorageResources
+      }
+    }
+  }
+}
+
+query VPDS_Mobility {
+  dataSphere {
+    virtualDataSpheres {
+      id {
+        ...ResourceId
+      }
+      storageResources {
+        storageGroups {
+          mobility {
+            ...Mobility
+            mostActiveChildUoids
+            leastActiveChildUoids
+          }
+        }
+      }
+    }
+  }
+}
+
+
+##### "chroot" inside one VPDS.storageResources
 
 query GetShares {
   share {
+    id {
+      ...ResourceId
+    }
     ...StorageResource
   }
 }
 
-query GetShare($uoid:String) {
-  share(uoid:$uoid) {
+query GetShare($shareUoid:String) {
+  share(uoid:$shareUoid) {
     ...StorageResource
   }
 }
@@ -16,7 +115,7 @@ query GetShare($uoid:String) {
 query GetFileSystems {
   storage {
     id {
-      description
+      name
     }
     volumes {
       capabilities {
@@ -89,118 +188,7 @@ query GetFiles ($fileType:FileType=FILE) {
 
 query GetFileStats {
   filesStats(inode:0) {
-    name
-    tags
-    columns
-    rows {
-      inode
-      clientId
-      avgIops
-      time
-    }
-  }
-}
-
-
-##### DataSphere
-
-query DataSpheres {
-  dataSphere {
-    admins {
-      userId {
-        name
-      }
-    }
-    virtualDataSpheres {
-      id {
-        name
-        uoid
-      }
-    }
-  }
-}
-
-query DataSphere {
-  dataSphere {
-    virtualDataSpheres {
-      id {
-        ...ResourceId
-      }
-      location
-      admins {
-        ...UserAuth
-      }
-      health {
-        ...Health
-      }
-      capabilities {
-        ...Capabilities
-      }
-      computeResources {
-        cpu
-      }
-      communicationResources {
-        networkInterfaces {
-          ...NetworkInterface
-        }
-      }
-      storageResources {
-        ...StorageResources
-      }
-    }
-  }
-}
-
-query DataSphereHealth {
-  dataSphere {
-    virtualDataSpheres {
-      id {
-        ...ResourceId
-      }
-      health {
-        ...Health
-      }
-    }
-  }
-}
-
-query DataSphereCapabilities {
-  dataSphere {
-    virtualDataSpheres {
-      id {
-        ...ResourceId
-      }
-			capabilities {
-        ...Capabilities
-      }
-    }
-  }
-}
-
-query DataSphereStorage {
-  dataSphere {
-    virtualDataSpheres {
-      id {
-	      ...ResourceId
-       }
-      storageResources {
-        ...StorageResources
-      }
-    }
-  }
-}
-
-
-query DataSphereActivity {
-  dataSphere {
-    virtualDataSpheres {
-      id {
-        ...ResourceId
-      }
-      health {
-        ...Health
-      }
-    }
+    ...FileStats
   }
 }
 
@@ -440,6 +428,18 @@ fragment FilePermissions on File {
   executable
 }
 
+fragment FileStats on FileStats {
+  name
+  tags
+  columns
+  rows {
+    inode
+    clientId
+    avgIops
+    time
+  }
+}
+
 fragment UserAuth on UserAuth {
   userId {
     name
@@ -565,4 +565,17 @@ query GetFileTypes {
       }
     }
   }
+}
+
+
+
+##### Query Variables ###########################################################################
+##### lower GraphiQL window
+
+{
+  "vpdsUoid": "ds1ds1ds1ds1ds1ds1",
+  "type": "COLLECTION",
+  "shareUoid": "XDSDTYUGUF",
+  "userId": 4,
+  "skipMoeBreakdowns": true
 }

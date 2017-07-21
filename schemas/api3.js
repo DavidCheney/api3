@@ -13,6 +13,8 @@ exports.types = `
   type Query {
     # Get DataSphere Overview.
       dataSphere: DataSphere,
+    # Get VirtualDataSphere Overview.
+      virtualDataSphere(uoid:String): [VirtualDataSphere],
     # Get user by 'id' -- or all users if no id is given.
       users(id:Int): [User],
     # Get files by 'type' = {ALL|DIRECTORY|FILE}.
@@ -52,7 +54,6 @@ exports.types = `
     location: String,
     admins: [UserAuth],
     health: Health,
-    capabilities: StorageCapabilities,
     computeResources: [ComputeResources],
     storageResources: [StorageResources],
     communicationResources: [CommunicationResources],
@@ -79,6 +80,7 @@ exports.types = `
   # Resource types.
   enum ResourceType {
     DATASPHERE
+    VIRTUAL_DATASPHERE
     COLLECTION
     SHARE
     STORAGE_GROUP
