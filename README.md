@@ -4,7 +4,7 @@ http://172.29.161.196:4000/graph.html
 
 Refs:
 https://apis.guru/graphql-voyager/
-http://nathanrandal.com/graphql-visualizer/
+http://nathanrandal.com/graphql-visualizer/   # save-able images
 
 
 Patched to allow vertical space for zoom:

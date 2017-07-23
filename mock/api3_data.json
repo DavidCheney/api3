@@ -1,4 +1,11 @@
 {
+  "uoid": "JHCRRDGYKKHFDXSDR",
+  "id": {
+    "uoid": "JHCRRDGYKKHFDXSDR",
+    "resourceType": "DATASPHERE",
+    "name": "Your DataSphere",
+    "description": "Los Altos 1"
+  },
   "admins": [
     {
       "userId": {
