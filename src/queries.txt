@@ -16,7 +16,7 @@ query VirtualPrivateDataSphereMeta {
         uoid
       }
       admins {
-				...UserAuth
+		...UserAuth
       }
     }
   }

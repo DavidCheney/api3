@@ -163,6 +163,8 @@ function convertObjectsFieldToJson(array, field) {
 
 const app = express();
 
+app.use(express.static('.'));
+
 app.use('/graphql', graphqlHTTP({
     schema: schema,
     rootValue: root,

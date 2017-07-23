@@ -11,6 +11,7 @@
     "express": "^4.15.3",
     "express-graphql": "^0.6.6",
     "graphql": "^0.10.3",
+    "graphql-voyager": "^1.0.0-rc.7",
     "lodash": "^4.17.4",
     "subscriptions-transport-ws": "^0.7.3"
   },

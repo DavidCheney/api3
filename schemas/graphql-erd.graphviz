@@ -1,0 +1,114 @@
+digraph erd {
+graph [
+  rankdir = "LR"
+];
+node [
+  fontsize = "16"
+  shape = "plaintext"
+];
+edge [
+];
+Query [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Query</B></TD></TR><TR><TD PORT="dataSphereport">dataSphere: DataSphere</TD></TR>,<TR><TD PORT="virtualDataSphereport">virtualDataSphere(uoid:String): [VirtualDataSphere]</TD></TR>,<TR><TD PORT="usersport">users(id:Int): [User]</TD></TR>,<TR><TD PORT="filesport">files(type:FileType): [File]</TD></TR>,<TR><TD PORT="filesStatsport">filesStats(inode:Int): [FileStats]</TD></TR>,<TR><TD PORT="eventsport">events: [Events]</TD></TR>,<TR><TD PORT="tasksport">tasks: [Tasks]</TD></TR>,<TR><TD PORT="activityport">activity: [Activity]</TD></TR>,<TR><TD PORT="alignmentport">alignment: Alignment</TD></TR>,<TR><TD PORT="performanceport">performance: Performance</TD></TR>,<TR><TD PORT="capacityport">capacity: Capacity</TD></TR>,<TR><TD PORT="storageport">storage: [StorageResources]</TD></TR>,<TR><TD PORT="shareport">share(uoid:String): [StorageResource]</TD></TR>,<TR><TD PORT="resourcesOfTypeport">resourcesOfType(resourceType:ResourceType): [StorageResource]</TD></TR></TABLE>>];
+DataSphere [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>DataSphere</B></TD></TR><TR><TD PORT="uoidport">uoid: String!</TD></TR>,<TR><TD PORT="idport">id: ResourceId!</TD></TR>,<TR><TD PORT="adminsport">admins: [UserAuth]</TD></TR>,<TR><TD PORT="virtualDataSpheresport">virtualDataSpheres: [VirtualDataSphere]</TD></TR></TABLE>>];
+VirtualDataSphere [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>VirtualDataSphere</B></TD></TR><TR><TD PORT="idport">id: ResourceId</TD></TR>,<TR><TD PORT="locationport">location: String</TD></TR>,<TR><TD PORT="adminsport">admins: [UserAuth]</TD></TR>,<TR><TD PORT="healthport">health: Health</TD></TR>,<TR><TD PORT="computeResourcesport">computeResources: [ComputeResources]</TD></TR>,<TR><TD PORT="storageResourcesport">storageResources: [StorageResources]</TD></TR>,<TR><TD PORT="communicationResourcesport">communicationResources: [CommunicationResources]</TD></TR>,<TR><TD PORT="activeUsersport">activeUsers: [UserAuth]</TD></TR></TABLE>>];
+User [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>User</B></TD></TR><TR><TD PORT="idport">id: Int!</TD></TR>,<TR><TD PORT="dateport">date: DateTime</TD></TR>,<TR><TD PORT="nameport">name: String</TD></TR>,<TR><TD PORT="filesport">files: [File]</TD></TR>,<TR><TD PORT="filesStatsport">filesStats: [FileStats]</TD></TR></TABLE>>];
+File [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>File</B></TD></TR><TR><TD PORT="executableport">executable: Boolean</TD></TR>,<TR><TD PORT="explicitport">explicit: Boolean</TD></TR>,<TR><TD PORT="lastModifiedport">lastModified: String</TD></TR>,<TR><TD PORT="logicalSizeport">logicalSize: String</TD></TR>,<TR><TD PORT="nameport">name: String</TD></TR>,<TR><TD PORT="parentport">parent: String</TD></TR>,<TR><TD PORT="pathport">path: String</TD></TR>,<TR><TD PORT="permanentDataLossport">permanentDataLoss: Boolean</TD></TR>,<TR><TD PORT="physicalSizeport">physicalSize: String</TD></TR>,<TR><TD PORT="profileNameport">profileName: String</TD></TR>,<TR><TD PORT="readableport">readable: Boolean</TD></TR>,<TR><TD PORT="shareNameport">shareName: String</TD></TR>,<TR><TD PORT="sharePathport">sharePath: String</TD></TR>,<TR><TD PORT="sizeport">size: String</TD></TR>,<TR><TD PORT="sloTargetsport">sloTargets: String</TD></TR>,<TR><TD PORT="slosport">slos: String</TD></TR>,<TR><TD PORT="typeport">type: String</TD></TR>,<TR><TD PORT="volumesport">volumes: String</TD></TR>,<TR><TD PORT="writableport">writable: Boolean</TD></TR></TABLE>>];
+FileStats [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>FileStats</B></TD></TR><TR><TD PORT="nameport">name: String</TD></TR>,<TR><TD PORT="tagsport">tags: String</TD></TR>,<TR><TD PORT="columnsport">columns: [String]</TD></TR>,<TR><TD PORT="rowsport">rows: [PdfsStats]</TD></TR></TABLE>>];
+Events [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Events</B></TD></TR><TR><TD PORT="severityport">severity: String</TD></TR>,<TR><TD PORT="typeport">type: String</TD></TR>,<TR><TD PORT="paramsport">params: [String]</TD></TR>,<TR><TD PORT="createdport">created: String</TD></TR>,<TR><TD PORT="clearedport">cleared: Boolean</TD></TR>,<TR><TD PORT="clearTimeport">clearTime: String</TD></TR></TABLE>>];
+Tasks [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Tasks</B></TD></TR><TR><TD PORT="nameport">name: String</TD></TR>,<TR><TD PORT="paramsMapport">paramsMap: String</TD></TR>,<TR><TD PORT="paramsMapJsonport">paramsMapJson: String</TD></TR>,<TR><TD PORT="createdport">created: String</TD></TR>,<TR><TD PORT="startedport">started: String</TD></TR>,<TR><TD PORT="statusport">status: String</TD></TR>,<TR><TD PORT="progressport">progress: Int</TD></TR>,<TR><TD PORT="exitValueport">exitValue: String</TD></TR></TABLE>>];
+Activity [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Activity</B></TD></TR><TR><TD PORT="storageResourceport">storageResource: StorageResources</TD></TR>,<TR><TD PORT="timestampport">timestamp: String</TD></TR>,<TR><TD PORT="maxReadOpsport">maxReadOps: Float</TD></TR>,<TR><TD PORT="maxWriteOpsport">maxWriteOps: Float</TD></TR></TABLE>>];
+Alignment [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Alignment</B></TD></TR><TR><TD PORT="maxport">max: Float</TD></TR>,<TR><TD PORT="breakdownport">breakdown: [MoeBreakdown]</TD></TR></TABLE>>];
+Performance [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Performance</B></TD></TR><TR><TD PORT="maxport">max: Float</TD></TR>,<TR><TD PORT="breakdownport">breakdown: [MoeBreakdown]</TD></TR></TABLE>>];
+Capacity [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Capacity</B></TD></TR><TR><TD PORT="maxport">max: Float</TD></TR>,<TR><TD PORT="breakdownport">breakdown: [MoeBreakdown]</TD></TR></TABLE>>];
+StorageResources [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>StorageResources</B></TD></TR><TR><TD PORT="idport">id: ResourceId!</TD></TR>,<TR><TD PORT="uoidport">uoid: String!</TD></TR>,<TR><TD PORT="sharesport">shares: [StorageResource]!</TD></TR>,<TR><TD PORT="collectionsport">collections: [StorageResource]!</TD></TR>,<TR><TD PORT="storageGroupsport">storageGroups: [StorageResource]!</TD></TR>,<TR><TD PORT="nodesport">nodes: [StorageResource]!</TD></TR>,<TR><TD PORT="volumesport">volumes: [StorageResource]!</TD></TR></TABLE>>];
+StorageResource [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>StorageResource</B></TD></TR><TR><TD PORT="idport">id: ResourceId!</TD></TR>,<TR><TD PORT="uoidport">uoid: String!</TD></TR>,<TR><TD PORT="healthport">health: Health</TD></TR>,<TR><TD PORT="capabilitiesport">capabilities: StorageCapabilities</TD></TR>,<TR><TD PORT="mobilityport">mobility: DataMobility</TD></TR></TABLE>>];
+ResourceId [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>ResourceId</B></TD></TR><TR><TD PORT="resourceTypeport">resourceType: ResourceType!</TD></TR>,<TR><TD PORT="nameport">name: String!</TD></TR>,<TR><TD PORT="descriptionport">description: String</TD></TR>,<TR><TD PORT="uoidport">uoid: String!</TD></TR></TABLE>>];
+UserAuth [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>UserAuth</B></TD></TR><TR><TD PORT="userIdport">userId: ResourceId</TD></TR>,<TR><TD PORT="rolesport">roles: [String]</TD></TR></TABLE>>];
+Health [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Health</B></TD></TR><TR><TD PORT="statusport">status: HealthStatus</TD></TR>,<TR><TD PORT="disordersport">disorders: [UserMessage]</TD></TR></TABLE>>];
+ComputeResources [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>ComputeResources</B></TD></TR><TR><TD PORT="cpuport">cpu: String</TD></TR></TABLE>>];
+CommunicationResources [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>CommunicationResources</B></TD></TR><TR><TD PORT="networkInterfacesport">networkInterfaces: [NetworkInterface]</TD></TR></TABLE>>];
+PdfsStats [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>PdfsStats</B></TD></TR><TR><TD PORT="inodeport">inode: Int</TD></TR>,<TR><TD PORT="clientIdport">clientId: Int</TD></TR>,<TR><TD PORT="instanceIdport">instanceId: Int</TD></TR>,<TR><TD PORT="avgIopsport">avgIops: Int</TD></TR>,<TR><TD PORT="objectIdport">objectId: Int</TD></TR>,<TR><TD PORT="timeport">time: String</TD></TR>,<TR><TD PORT="timeStampport">timeStamp: String</TD></TR></TABLE>>];
+MoeBreakdown [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>MoeBreakdown</B></TD></TR><TR><TD PORT="shareport">share: String</TD></TR>,<TR><TD PORT="storageContainerport">storageContainer: String</TD></TR>,<TR><TD PORT="dataport">data: String</TD></TR></TABLE>>];
+StorageCapabilities [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>StorageCapabilities</B></TD></TR><TR><TD PORT="filesystemport">filesystem: FilesystemCapabilities</TD></TR>,<TR><TD PORT="capacitiesport">capacities: Capacities</TD></TR>,<TR><TD PORT="bandwidthsport">bandwidths: Bandwidths</TD></TR>,<TR><TD PORT="operationsport">operations: Operations</TD></TR>,<TR><TD PORT="latenciesport">latencies: Latencies</TD></TR></TABLE>>];
+DataMobility [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>DataMobility</B></TD></TR><TR><TD PORT="mobilityMeasuresport">mobilityMeasures: [MobilityMeasure]</TD></TR>,<TR><TD PORT="mostActiveChildUoidsport">mostActiveChildUoids: [String]!</TD></TR>,<TR><TD PORT="leastActiveChildUoidsport">leastActiveChildUoids: [String]!</TD></TR></TABLE>>];
+UserMessage [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>UserMessage</B></TD></TR><TR><TD PORT="severityport">severity: HealthStatus</TD></TR>,<TR><TD PORT="messageTemplateport">messageTemplate: String</TD></TR>,<TR><TD PORT="dataport">data: [String]!</TD></TR></TABLE>>];
+NetworkInterface [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>NetworkInterface</B></TD></TR><TR><TD PORT="idport">id: ResourceId</TD></TR>,<TR><TD PORT="nodeIdport">nodeId: ResourceId</TD></TR>,<TR><TD PORT="bandwidthsport">bandwidths: Bandwidths</TD></TR>,<TR><TD PORT="operationsport">operations: Operations</TD></TR>,<TR><TD PORT="latenciesport">latencies: Latencies</TD></TR></TABLE>>];
+FilesystemCapabilities [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>FilesystemCapabilities</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="totalInodesport">totalInodes: Int</TD></TR>,<TR><TD PORT="availableInodesport">availableInodes: Int</TD></TR>,<TR><TD PORT="usedInodesport">usedInodes: Int</TD></TR>,<TR><TD PORT="otherInodesport">otherInodes: Int</TD></TR>,<TR><TD PORT="nonCompliantFilesport">nonCompliantFiles: Int</TD></TR>,<TR><TD PORT="severelyNonCompliantFilesport">severelyNonCompliantFiles: Int</TD></TR></TABLE>>];
+Capacities [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Capacities</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="totalMBport">totalMB: Int</TD></TR>,<TR><TD PORT="availableMBport">availableMB: Int</TD></TR>,<TR><TD PORT="usedMBport">usedMB: Int</TD></TR>,<TR><TD PORT="otherMBport">otherMB: Int</TD></TR>,<TR><TD PORT="thresholdsport">thresholds: [Threshold]</TD></TR>,<TR><TD PORT="measurementsport">measurements: [Measurement]</TD></TR></TABLE>>];
+Bandwidths [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Bandwidths</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="readMBPerSecondport">readMBPerSecond: Int</TD></TR>,<TR><TD PORT="writeMBPerSecondport">writeMBPerSecond: Int</TD></TR>,<TR><TD PORT="readMBPerSecondCapabilityport">readMBPerSecondCapability: Int</TD></TR>,<TR><TD PORT="writeMBPerSecondCapabilityport">writeMBPerSecondCapability: Int</TD></TR>,<TR><TD PORT="thresholdsport">thresholds: [Threshold]</TD></TR>,<TR><TD PORT="measurementsport">measurements: [Measurement]</TD></TR></TABLE>>];
+Operations [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Operations</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="readPerSecondport">readPerSecond: Int</TD></TR>,<TR><TD PORT="writePerSecondport">writePerSecond: Int</TD></TR>,<TR><TD PORT="metaDataReadPerSecondport">metaDataReadPerSecond: Int</TD></TR>,<TR><TD PORT="metaDataWritePerSecondport">metaDataWritePerSecond: Int</TD></TR>,<TR><TD PORT="readPerSecondCapabilityport">readPerSecondCapability: Int</TD></TR>,<TR><TD PORT="writePerSecondCapabilityport">writePerSecondCapability: Int</TD></TR>,<TR><TD PORT="metaDataReadPerSecondCapabilityport">metaDataReadPerSecondCapability: Int</TD></TR>,<TR><TD PORT="metaDataWritePerSecondCapabilityport">metaDataWritePerSecondCapability: Int</TD></TR>,<TR><TD PORT="thresholdsport">thresholds: [Threshold]</TD></TR>,<TR><TD PORT="measurementsport">measurements: [Measurement]</TD></TR></TABLE>>];
+Latencies [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Latencies</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="readMsport">readMs: Int</TD></TR>,<TR><TD PORT="writeMsport">writeMs: Int</TD></TR>,<TR><TD PORT="readMsCapabilityport">readMsCapability: Int</TD></TR>,<TR><TD PORT="writeMsCapabilityport">writeMsCapability: Int</TD></TR>,<TR><TD PORT="thresholdsport">thresholds: [Threshold]!</TD></TR>,<TR><TD PORT="measurementsport">measurements: [Measurement]</TD></TR></TABLE>>];
+MobilityMeasure [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>MobilityMeasure</B></TD></TR><TR><TD PORT="objectUoidport">objectUoid: String!</TD></TR>,<TR><TD PORT="directionport">direction: Direction!</TD></TR>,<TR><TD PORT="partnerUoidport">partnerUoid: String!</TD></TR>,<TR><TD PORT="measurementsport">measurements: [Measurement]</TD></TR></TABLE>>];
+Threshold [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Threshold</B></TD></TR><TR><TD PORT="unitport">unit: MetricUnit</TD></TR>,<TR><TD PORT="timeSpanport">timeSpan: TimeSpan</TD></TR>,<TR><TD PORT="warningLimitport">warningLimit: Int</TD></TR>,<TR><TD PORT="warningCountport">warningCount: Int</TD></TR>,<TR><TD PORT="severeLimitport">severeLimit: Int</TD></TR>,<TR><TD PORT="severeCountport">severeCount: Int</TD></TR></TABLE>>];
+Measurement [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Measurement</B></TD></TR><TR><TD PORT="metricport">metric: Metric</TD></TR>,<TR><TD PORT="valuesport">values: [Float]!</TD></TR></TABLE>>];
+TimeSpan [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>TimeSpan</B></TD></TR><TR><TD PORT="startMsport">startMs: Int</TD></TR>,<TR><TD PORT="endMsport">endMs: Int</TD></TR>,<TR><TD PORT="durationMsport">durationMs: Int</TD></TR></TABLE>>];
+Metric [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"><TR><TD><B>Metric</B></TD></TR><TR><TD PORT="metricTypeport">metricType: MetricType</TD></TR>,<TR><TD PORT="metricUnitport">metricUnit: MetricUnit</TD></TR>,<TR><TD PORT="metricFunctionport">metricFunction: MetricFunction</TD></TR>,<TR><TD PORT="timeSpanport">timeSpan: TimeSpan!</TD></TR></TABLE>>];
+
+Query:dataSphereport -> DataSphere
+Query:virtualDataSphereport -> VirtualDataSphere
+Query:usersport -> User
+Query:filesport -> File
+Query:filesStatsport -> FileStats
+Query:eventsport -> Events
+Query:tasksport -> Tasks
+Query:activityport -> Activity
+Query:alignmentport -> Alignment
+Query:performanceport -> Performance
+Query:capacityport -> Capacity
+Query:storageport -> StorageResources
+Query:shareport -> StorageResource
+Query:resourcesOfTypeport -> StorageResource
+DataSphere:idport -> ResourceId
+DataSphere:adminsport -> UserAuth
+DataSphere:virtualDataSpheresport -> VirtualDataSphere
+VirtualDataSphere:idport -> ResourceId
+VirtualDataSphere:adminsport -> UserAuth
+VirtualDataSphere:healthport -> Health
+VirtualDataSphere:computeResourcesport -> ComputeResources
+VirtualDataSphere:storageResourcesport -> StorageResources
+VirtualDataSphere:communicationResourcesport -> CommunicationResources
+VirtualDataSphere:activeUsersport -> UserAuth
+User:filesport -> File
+User:filesStatsport -> FileStats
+FileStats:rowsport -> PdfsStats
+Activity:storageResourceport -> StorageResources
+Alignment:breakdownport -> MoeBreakdown
+Performance:breakdownport -> MoeBreakdown
+Capacity:breakdownport -> MoeBreakdown
+StorageResources:idport -> ResourceId
+StorageResources:sharesport -> StorageResource
+StorageResources:collectionsport -> StorageResource
+StorageResources:storageGroupsport -> StorageResource
+StorageResources:nodesport -> StorageResource
+StorageResources:volumesport -> StorageResource
+StorageResource:idport -> ResourceId
+StorageResource:healthport -> Health
+StorageResource:capabilitiesport -> StorageCapabilities
+StorageResource:mobilityport -> DataMobility
+UserAuth:userIdport -> ResourceId
+Health:disordersport -> UserMessage
+CommunicationResources:networkInterfacesport -> NetworkInterface
+StorageCapabilities:filesystemport -> FilesystemCapabilities
+StorageCapabilities:capacitiesport -> Capacities
+StorageCapabilities:bandwidthsport -> Bandwidths
+StorageCapabilities:operationsport -> Operations
+StorageCapabilities:latenciesport -> Latencies
+DataMobility:mobilityMeasuresport -> MobilityMeasure
+NetworkInterface:idport -> ResourceId
+NetworkInterface:nodeIdport -> ResourceId
+NetworkInterface:bandwidthsport -> Bandwidths
+NetworkInterface:operationsport -> Operations
+NetworkInterface:latenciesport -> Latencies
+Capacities:thresholdsport -> Threshold
+Capacities:measurementsport -> Measurement
+Bandwidths:thresholdsport -> Threshold
+Bandwidths:measurementsport -> Measurement
+Operations:thresholdsport -> Threshold
+Operations:measurementsport -> Measurement
+Latencies:thresholdsport -> Threshold
+Latencies:measurementsport -> Measurement
+MobilityMeasure:measurementsport -> Measurement
+Threshold:timeSpanport -> TimeSpan
+Measurement:metricport -> Metric
+Metric:timeSpanport -> TimeSpan
+}
