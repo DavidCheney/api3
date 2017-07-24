@@ -1,1 +1,28 @@
-{"queryParams":{"storageContainer":"Uoid [uuid=688435ab-219a-4b2c-aab1-756d9f8dd3b9, objectType=STORAGE_VOLUME]","breakdown":"NONE"},"max":null,"breakdown":[{"share":null,"storageContainer":{"name":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","uoid":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"}},"data":{"compliantFilesUsed":55.0,"nonCompliantFilesUsed":0.0,"severelyNonCompliantFilesUsed":0.0,"compliantSpaceUsed":1.4655488E7,"nonCompliantSpaceUsed":0.0,"severelyNonCompliantSpaceUsed":0.0,"timestamp":"1504433395285"}}]}
+{
+  "queryParams": {
+    "storageContainer": "Uoid [uuid=688435ab-219a-4b2c-aab1-756d9f8dd3b9, objectType=STORAGE_VOLUME]",
+    "breakdown": "NONE"
+  },
+  "max": null,
+  "breakdown": [
+    {
+      "share": null,
+      "storageContainer": {
+        "name": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+        "uoid": {
+          "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+          "objectType": "STORAGE_VOLUME"
+        }
+      },
+      "data": {
+        "compliantFilesUsed": 55.0,
+        "nonCompliantFilesUsed": 0.0,
+        "severelyNonCompliantFilesUsed": 0.0,
+        "compliantSpaceUsed": 1.4655488E7,
+        "nonCompliantSpaceUsed": 0.0,
+        "severelyNonCompliantSpaceUsed": 0.0,
+        "timestamp": "1504433395285"
+      }
+    }
+  ]
+}

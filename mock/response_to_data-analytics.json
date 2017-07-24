@@ -1,1 +1,2162 @@
-[{"name":"pdfs_stats","columns":["time","timestamp","inode","clientId","objectId","instanceId","avgIops"],"tags":{"obsId":"11","shareId":"2"},"rows":[{"inode":86518,"clientId":3,"instanceId":519,"time":1499452356318,"avgIops":7283,"objectId":14,"timestamp":1499452356318},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452371320,"avgIops":7283,"objectId":14,"timestamp":1499452371320},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452386320,"avgIops":7181,"objectId":14,"timestamp":1499452386320},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452401432,"avgIops":5892,"objectId":14,"timestamp":1499452401432},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452416432,"avgIops":5892,"objectId":14,"timestamp":1499452416432},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452431434,"avgIops":6989,"objectId":14,"timestamp":1499452431434},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452446434,"avgIops":6902,"objectId":14,"timestamp":1499452446434},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452461434,"avgIops":6902,"objectId":14,"timestamp":1499452461434},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452476439,"avgIops":8222,"objectId":14,"timestamp":1499452476439},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452491440,"avgIops":6833,"objectId":14,"timestamp":1499452491440},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452506440,"avgIops":6833,"objectId":14,"timestamp":1499452506440},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452521440,"avgIops":8101,"objectId":14,"timestamp":1499452521440},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452536441,"avgIops":8101,"objectId":14,"timestamp":1499452536441},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452551442,"avgIops":7552,"objectId":14,"timestamp":1499452551442},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452566442,"avgIops":5338,"objectId":14,"timestamp":1499452566442},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452581443,"avgIops":5338,"objectId":14,"timestamp":1499452581443},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452596443,"avgIops":6366,"objectId":14,"timestamp":1499452596443},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452611448,"avgIops":6837,"objectId":14,"timestamp":1499452611448},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452626446,"avgIops":6837,"objectId":14,"timestamp":1499452626446},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452641447,"avgIops":8058,"objectId":14,"timestamp":1499452641447},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452656447,"avgIops":6707,"objectId":14,"timestamp":1499452656447},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452671448,"avgIops":6707,"objectId":14,"timestamp":1499452671448},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452686450,"avgIops":7093,"objectId":14,"timestamp":1499452686450},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452701450,"avgIops":4310,"objectId":14,"timestamp":1499452701450},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452716453,"avgIops":4310,"objectId":14,"timestamp":1499452716453},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452731453,"avgIops":5201,"objectId":14,"timestamp":1499452731453},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452746453,"avgIops":5759,"objectId":14,"timestamp":1499452746453},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452761454,"avgIops":5759,"objectId":14,"timestamp":1499452761454},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452776455,"avgIops":6976,"objectId":14,"timestamp":1499452776455},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452791457,"avgIops":6976,"objectId":14,"timestamp":1499452791457},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452806458,"avgIops":7887,"objectId":14,"timestamp":1499452806458},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452821463,"avgIops":7294,"objectId":14,"timestamp":1499452821463},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452836463,"avgIops":7294,"objectId":14,"timestamp":1499452836463},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452851676,"avgIops":7922,"objectId":14,"timestamp":1499452851676},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452866676,"avgIops":6713,"objectId":14,"timestamp":1499452866676},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452881677,"avgIops":6713,"objectId":14,"timestamp":1499452881677},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452896678,"avgIops":7688,"objectId":14,"timestamp":1499452896678},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452911679,"avgIops":4432,"objectId":14,"timestamp":1499452911679},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452926715,"avgIops":4432,"objectId":14,"timestamp":1499452926715},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452941716,"avgIops":4059,"objectId":14,"timestamp":1499452941716},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452956716,"avgIops":6511,"objectId":14,"timestamp":1499452956716},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452971717,"avgIops":6511,"objectId":14,"timestamp":1499452971717},{"inode":86518,"clientId":3,"instanceId":519,"time":1499452986717,"avgIops":8612,"objectId":14,"timestamp":1499452986717},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453001718,"avgIops":6973,"objectId":14,"timestamp":1499453001718},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453016724,"avgIops":6973,"objectId":14,"timestamp":1499453016724},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453031724,"avgIops":7021,"objectId":14,"timestamp":1499453031724},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453046729,"avgIops":6571,"objectId":14,"timestamp":1499453046729},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453061730,"avgIops":6571,"objectId":14,"timestamp":1499453061730},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453076731,"avgIops":6784,"objectId":14,"timestamp":1499453076731},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453091732,"avgIops":6784,"objectId":14,"timestamp":1499453091732},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453106732,"avgIops":6603,"objectId":14,"timestamp":1499453106732},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453121732,"avgIops":5779,"objectId":14,"timestamp":1499453121732},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453136733,"avgIops":5779,"objectId":14,"timestamp":1499453136733},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453151733,"avgIops":7323,"objectId":14,"timestamp":1499453151733},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453166734,"avgIops":7007,"objectId":14,"timestamp":1499453166734},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453181739,"avgIops":7007,"objectId":14,"timestamp":1499453181739},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453196740,"avgIops":7583,"objectId":14,"timestamp":1499453196740},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453211743,"avgIops":6347,"objectId":14,"timestamp":1499453211743},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453226744,"avgIops":6347,"objectId":14,"timestamp":1499453226744},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453241745,"avgIops":6852,"objectId":14,"timestamp":1499453241745},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453256746,"avgIops":6852,"objectId":14,"timestamp":1499453256746},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453271747,"avgIops":7227,"objectId":14,"timestamp":1499453271747},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453286748,"avgIops":6166,"objectId":14,"timestamp":1499453286748},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453301787,"avgIops":6166,"objectId":14,"timestamp":1499453301787},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453316787,"avgIops":7575,"objectId":14,"timestamp":1499453316787},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453331787,"avgIops":7479,"objectId":14,"timestamp":1499453331787},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453346788,"avgIops":7479,"objectId":14,"timestamp":1499453346788},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453361788,"avgIops":8182,"objectId":14,"timestamp":1499453361788},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453376788,"avgIops":5828,"objectId":14,"timestamp":1499453376788},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453391789,"avgIops":5828,"objectId":14,"timestamp":1499453391789},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453406790,"avgIops":7355,"objectId":14,"timestamp":1499453406790},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453421792,"avgIops":5554,"objectId":14,"timestamp":1499453421792},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453436792,"avgIops":5554,"objectId":14,"timestamp":1499453436792},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453451792,"avgIops":5582,"objectId":14,"timestamp":1499453451792},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453466793,"avgIops":5341,"objectId":14,"timestamp":1499453466793},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453481794,"avgIops":5341,"objectId":14,"timestamp":1499453481794},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453496794,"avgIops":6266,"objectId":14,"timestamp":1499453496794},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453511796,"avgIops":5904,"objectId":14,"timestamp":1499453511796},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453526806,"avgIops":5904,"objectId":14,"timestamp":1499453526806},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453541806,"avgIops":7277,"objectId":14,"timestamp":1499453541806},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453556807,"avgIops":7277,"objectId":14,"timestamp":1499453556807},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453571808,"avgIops":7111,"objectId":14,"timestamp":1499453571808},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453586809,"avgIops":5091,"objectId":14,"timestamp":1499453586809},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453601810,"avgIops":5091,"objectId":14,"timestamp":1499453601810},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453616866,"avgIops":4386,"objectId":14,"timestamp":1499453616866},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453631867,"avgIops":4386,"objectId":14,"timestamp":1499453631867},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453646871,"avgIops":4760,"objectId":14,"timestamp":1499453646871},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453661873,"avgIops":4760,"objectId":14,"timestamp":1499453661873},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453676873,"avgIops":6779,"objectId":14,"timestamp":1499453676873},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453691873,"avgIops":6779,"objectId":14,"timestamp":1499453691873},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453706873,"avgIops":6545,"objectId":14,"timestamp":1499453706873},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453721876,"avgIops":6004,"objectId":14,"timestamp":1499453721876},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453736876,"avgIops":6004,"objectId":14,"timestamp":1499453736876},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453751876,"avgIops":7203,"objectId":14,"timestamp":1499453751876},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453766876,"avgIops":5641,"objectId":14,"timestamp":1499453766876},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453781878,"avgIops":5641,"objectId":14,"timestamp":1499453781878},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453796878,"avgIops":5851,"objectId":14,"timestamp":1499453796878},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453811880,"avgIops":5851,"objectId":14,"timestamp":1499453811880},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453827081,"avgIops":7044,"objectId":14,"timestamp":1499453827081},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453842085,"avgIops":6777,"objectId":14,"timestamp":1499453842085},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453857085,"avgIops":6777,"objectId":14,"timestamp":1499453857085},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453872086,"avgIops":8135,"objectId":14,"timestamp":1499453872086},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453887086,"avgIops":6023,"objectId":14,"timestamp":1499453887086},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453902086,"avgIops":6023,"objectId":14,"timestamp":1499453902086},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453917087,"avgIops":6538,"objectId":14,"timestamp":1499453917087},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453932087,"avgIops":5469,"objectId":14,"timestamp":1499453932087},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453947089,"avgIops":5469,"objectId":14,"timestamp":1499453947089},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453962090,"avgIops":6485,"objectId":14,"timestamp":1499453962090},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453977090,"avgIops":5424,"objectId":14,"timestamp":1499453977090},{"inode":86518,"clientId":3,"instanceId":519,"time":1499453992091,"avgIops":5424,"objectId":14,"timestamp":1499453992091},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454007092,"avgIops":8264,"objectId":14,"timestamp":1499454007092},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454022092,"avgIops":8264,"objectId":14,"timestamp":1499454022092},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454037096,"avgIops":7853,"objectId":14,"timestamp":1499454037096},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454052101,"avgIops":6411,"objectId":14,"timestamp":1499454052101},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454067103,"avgIops":6411,"objectId":14,"timestamp":1499454067103},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454082107,"avgIops":6093,"objectId":14,"timestamp":1499454082107},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454097107,"avgIops":4892,"objectId":14,"timestamp":1499454097107},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454112108,"avgIops":4892,"objectId":14,"timestamp":1499454112108},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454127109,"avgIops":5466,"objectId":14,"timestamp":1499454127109},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454142109,"avgIops":3944,"objectId":14,"timestamp":1499454142109},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454157114,"avgIops":3944,"objectId":14,"timestamp":1499454157114},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454172114,"avgIops":5000,"objectId":14,"timestamp":1499454172114},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454187114,"avgIops":5416,"objectId":14,"timestamp":1499454187114},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454202115,"avgIops":5416,"objectId":14,"timestamp":1499454202115},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454217115,"avgIops":5676,"objectId":14,"timestamp":1499454217115},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454232119,"avgIops":5788,"objectId":14,"timestamp":1499454232119},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454247122,"avgIops":5788,"objectId":14,"timestamp":1499454247122},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454262122,"avgIops":6371,"objectId":14,"timestamp":1499454262122},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454277128,"avgIops":4371,"objectId":14,"timestamp":1499454277128},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454292130,"avgIops":4371,"objectId":14,"timestamp":1499454292130},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454307133,"avgIops":3390,"objectId":14,"timestamp":1499454307133},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454322133,"avgIops":4202,"objectId":14,"timestamp":1499454322133},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454337133,"avgIops":4202,"objectId":14,"timestamp":1499454337133},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454352135,"avgIops":6743,"objectId":14,"timestamp":1499454352135},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454367136,"avgIops":6743,"objectId":14,"timestamp":1499454367136},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454382137,"avgIops":7980,"objectId":14,"timestamp":1499454382137},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454397137,"avgIops":7980,"objectId":14,"timestamp":1499454397137},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454412138,"avgIops":8385,"objectId":14,"timestamp":1499454412138},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454427139,"avgIops":5698,"objectId":14,"timestamp":1499454427139},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454442140,"avgIops":6240,"objectId":14,"timestamp":1499454442140},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454457140,"avgIops":6240,"objectId":14,"timestamp":1499454457140},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454472142,"avgIops":6298,"objectId":14,"timestamp":1499454472142},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454487142,"avgIops":6298,"objectId":14,"timestamp":1499454487142},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454502143,"avgIops":6029,"objectId":14,"timestamp":1499454502143},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454517143,"avgIops":6029,"objectId":14,"timestamp":1499454517143},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454532143,"avgIops":6690,"objectId":14,"timestamp":1499454532143},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454547144,"avgIops":6726,"objectId":14,"timestamp":1499454547144},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454562144,"avgIops":6726,"objectId":14,"timestamp":1499454562144},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454577144,"avgIops":7023,"objectId":14,"timestamp":1499454577144},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454592146,"avgIops":4983,"objectId":14,"timestamp":1499454592146},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454607150,"avgIops":4983,"objectId":14,"timestamp":1499454607150},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454622153,"avgIops":6090,"objectId":14,"timestamp":1499454622153},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454637153,"avgIops":5113,"objectId":14,"timestamp":1499454637153},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454652154,"avgIops":5113,"objectId":14,"timestamp":1499454652154},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454667166,"avgIops":6314,"objectId":14,"timestamp":1499454667166},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454682166,"avgIops":6314,"objectId":14,"timestamp":1499454682166},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454697168,"avgIops":6925,"objectId":14,"timestamp":1499454697168},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454712173,"avgIops":5822,"objectId":14,"timestamp":1499454712173},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454727173,"avgIops":5822,"objectId":14,"timestamp":1499454727173},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454742175,"avgIops":7035,"objectId":14,"timestamp":1499454742175},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454757180,"avgIops":5461,"objectId":14,"timestamp":1499454757180},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454772181,"avgIops":5461,"objectId":14,"timestamp":1499454772181},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454787181,"avgIops":6586,"objectId":14,"timestamp":1499454787181},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454802186,"avgIops":5833,"objectId":14,"timestamp":1499454802186},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454817189,"avgIops":5833,"objectId":14,"timestamp":1499454817189},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454832189,"avgIops":6603,"objectId":14,"timestamp":1499454832189},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454847190,"avgIops":5111,"objectId":14,"timestamp":1499454847190},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454862190,"avgIops":5111,"objectId":14,"timestamp":1499454862190},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454877192,"avgIops":6250,"objectId":14,"timestamp":1499454877192},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454892193,"avgIops":6007,"objectId":14,"timestamp":1499454892193},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454907193,"avgIops":6007,"objectId":14,"timestamp":1499454907193},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454922193,"avgIops":7595,"objectId":14,"timestamp":1499454922193},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454937193,"avgIops":5829,"objectId":14,"timestamp":1499454937193},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454952193,"avgIops":5829,"objectId":14,"timestamp":1499454952193},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454967194,"avgIops":6804,"objectId":14,"timestamp":1499454967194},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454982195,"avgIops":4268,"objectId":14,"timestamp":1499454982195},{"inode":86518,"clientId":3,"instanceId":519,"time":1499454997208,"avgIops":4268,"objectId":14,"timestamp":1499454997208},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455012212,"avgIops":4284,"objectId":14,"timestamp":1499455012212},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455027217,"avgIops":4284,"objectId":14,"timestamp":1499455027217},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455042223,"avgIops":6552,"objectId":14,"timestamp":1499455042223},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455057225,"avgIops":6552,"objectId":14,"timestamp":1499455057225},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455072226,"avgIops":7273,"objectId":14,"timestamp":1499455072226},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455087226,"avgIops":5446,"objectId":14,"timestamp":1499455087226},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455102228,"avgIops":5446,"objectId":14,"timestamp":1499455102228},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455117228,"avgIops":6389,"objectId":14,"timestamp":1499455117228},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455132232,"avgIops":5952,"objectId":14,"timestamp":1499455132232},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455147232,"avgIops":5952,"objectId":14,"timestamp":1499455147232},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455162233,"avgIops":6338,"objectId":14,"timestamp":1499455162233},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455177233,"avgIops":6338,"objectId":14,"timestamp":1499455177233},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455192238,"avgIops":6325,"objectId":14,"timestamp":1499455192238},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455207239,"avgIops":5495,"objectId":14,"timestamp":1499455207239},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455222240,"avgIops":5495,"objectId":14,"timestamp":1499455222240},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455237241,"avgIops":7621,"objectId":14,"timestamp":1499455237241},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455252242,"avgIops":6259,"objectId":14,"timestamp":1499455252242},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455267242,"avgIops":6259,"objectId":14,"timestamp":1499455267242},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455282243,"avgIops":7252,"objectId":14,"timestamp":1499455282243},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455297243,"avgIops":7252,"objectId":14,"timestamp":1499455297243},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455312245,"avgIops":7454,"objectId":14,"timestamp":1499455312245},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455327246,"avgIops":6789,"objectId":14,"timestamp":1499455327246},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455342246,"avgIops":6789,"objectId":14,"timestamp":1499455342246},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455357248,"avgIops":6479,"objectId":14,"timestamp":1499455357248},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455372248,"avgIops":5158,"objectId":14,"timestamp":1499455372248},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455387291,"avgIops":5158,"objectId":14,"timestamp":1499455387291},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455402292,"avgIops":6740,"objectId":14,"timestamp":1499455402292},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455417294,"avgIops":6740,"objectId":14,"timestamp":1499455417294},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455432294,"avgIops":7012,"objectId":14,"timestamp":1499455432294},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455447295,"avgIops":5891,"objectId":14,"timestamp":1499455447295},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455462322,"avgIops":5891,"objectId":14,"timestamp":1499455462322},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455477322,"avgIops":6953,"objectId":14,"timestamp":1499455477322},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455492323,"avgIops":5648,"objectId":14,"timestamp":1499455492323},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455507323,"avgIops":5648,"objectId":14,"timestamp":1499455507323},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455522323,"avgIops":5799,"objectId":14,"timestamp":1499455522323},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455537323,"avgIops":5042,"objectId":14,"timestamp":1499455537323},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455552323,"avgIops":5042,"objectId":14,"timestamp":1499455552323},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455567324,"avgIops":6807,"objectId":14,"timestamp":1499455567324},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455582325,"avgIops":6142,"objectId":14,"timestamp":1499455582325},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455597325,"avgIops":6142,"objectId":14,"timestamp":1499455597325},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455612328,"avgIops":7002,"objectId":14,"timestamp":1499455612328},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455627328,"avgIops":5437,"objectId":14,"timestamp":1499455627328},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455642330,"avgIops":5437,"objectId":14,"timestamp":1499455642330},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455657331,"avgIops":6423,"objectId":14,"timestamp":1499455657331},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455672332,"avgIops":4408,"objectId":14,"timestamp":1499455672332},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455687333,"avgIops":4408,"objectId":14,"timestamp":1499455687333},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455702334,"avgIops":3764,"objectId":14,"timestamp":1499455702334},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455717341,"avgIops":3764,"objectId":14,"timestamp":1499455717341},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455732341,"avgIops":5857,"objectId":14,"timestamp":1499455732341},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455747346,"avgIops":5857,"objectId":14,"timestamp":1499455747346},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455762346,"avgIops":7036,"objectId":14,"timestamp":1499455762346},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455777350,"avgIops":6145,"objectId":14,"timestamp":1499455777350},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455792351,"avgIops":6145,"objectId":14,"timestamp":1499455792351},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455807352,"avgIops":6841,"objectId":14,"timestamp":1499455807352},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455822353,"avgIops":6385,"objectId":14,"timestamp":1499455822353},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455837354,"avgIops":6385,"objectId":14,"timestamp":1499455837354},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455852384,"avgIops":4983,"objectId":14,"timestamp":1499455852384},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455867385,"avgIops":4983,"objectId":14,"timestamp":1499455867385},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455882385,"avgIops":3732,"objectId":14,"timestamp":1499455882385},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455897388,"avgIops":4233,"objectId":14,"timestamp":1499455897388},{"inode":86518,"clientId":3,"instanceId":519,"time":1499455912388,"avgIops":4233,"objectId":14,"timestamp":1499455912388}]}]
+[
+  {
+    "name": "pdfs_stats",
+    "columns": [
+      "time",
+      "timestamp",
+      "inode",
+      "clientId",
+      "objectId",
+      "instanceId",
+      "avgIops"
+    ],
+    "tags": {
+      "obsId": "11",
+      "shareId": "2"
+    },
+    "rows": [
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452356318,
+        "avgIops": 7283,
+        "objectId": 14,
+        "timestamp": 1499452356318
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452371320,
+        "avgIops": 7283,
+        "objectId": 14,
+        "timestamp": 1499452371320
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452386320,
+        "avgIops": 7181,
+        "objectId": 14,
+        "timestamp": 1499452386320
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452401432,
+        "avgIops": 5892,
+        "objectId": 14,
+        "timestamp": 1499452401432
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452416432,
+        "avgIops": 5892,
+        "objectId": 14,
+        "timestamp": 1499452416432
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452431434,
+        "avgIops": 6989,
+        "objectId": 14,
+        "timestamp": 1499452431434
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452446434,
+        "avgIops": 6902,
+        "objectId": 14,
+        "timestamp": 1499452446434
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452461434,
+        "avgIops": 6902,
+        "objectId": 14,
+        "timestamp": 1499452461434
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452476439,
+        "avgIops": 8222,
+        "objectId": 14,
+        "timestamp": 1499452476439
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452491440,
+        "avgIops": 6833,
+        "objectId": 14,
+        "timestamp": 1499452491440
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452506440,
+        "avgIops": 6833,
+        "objectId": 14,
+        "timestamp": 1499452506440
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452521440,
+        "avgIops": 8101,
+        "objectId": 14,
+        "timestamp": 1499452521440
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452536441,
+        "avgIops": 8101,
+        "objectId": 14,
+        "timestamp": 1499452536441
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452551442,
+        "avgIops": 7552,
+        "objectId": 14,
+        "timestamp": 1499452551442
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452566442,
+        "avgIops": 5338,
+        "objectId": 14,
+        "timestamp": 1499452566442
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452581443,
+        "avgIops": 5338,
+        "objectId": 14,
+        "timestamp": 1499452581443
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452596443,
+        "avgIops": 6366,
+        "objectId": 14,
+        "timestamp": 1499452596443
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452611448,
+        "avgIops": 6837,
+        "objectId": 14,
+        "timestamp": 1499452611448
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452626446,
+        "avgIops": 6837,
+        "objectId": 14,
+        "timestamp": 1499452626446
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452641447,
+        "avgIops": 8058,
+        "objectId": 14,
+        "timestamp": 1499452641447
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452656447,
+        "avgIops": 6707,
+        "objectId": 14,
+        "timestamp": 1499452656447
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452671448,
+        "avgIops": 6707,
+        "objectId": 14,
+        "timestamp": 1499452671448
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452686450,
+        "avgIops": 7093,
+        "objectId": 14,
+        "timestamp": 1499452686450
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452701450,
+        "avgIops": 4310,
+        "objectId": 14,
+        "timestamp": 1499452701450
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452716453,
+        "avgIops": 4310,
+        "objectId": 14,
+        "timestamp": 1499452716453
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452731453,
+        "avgIops": 5201,
+        "objectId": 14,
+        "timestamp": 1499452731453
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452746453,
+        "avgIops": 5759,
+        "objectId": 14,
+        "timestamp": 1499452746453
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452761454,
+        "avgIops": 5759,
+        "objectId": 14,
+        "timestamp": 1499452761454
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452776455,
+        "avgIops": 6976,
+        "objectId": 14,
+        "timestamp": 1499452776455
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452791457,
+        "avgIops": 6976,
+        "objectId": 14,
+        "timestamp": 1499452791457
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452806458,
+        "avgIops": 7887,
+        "objectId": 14,
+        "timestamp": 1499452806458
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452821463,
+        "avgIops": 7294,
+        "objectId": 14,
+        "timestamp": 1499452821463
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452836463,
+        "avgIops": 7294,
+        "objectId": 14,
+        "timestamp": 1499452836463
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452851676,
+        "avgIops": 7922,
+        "objectId": 14,
+        "timestamp": 1499452851676
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452866676,
+        "avgIops": 6713,
+        "objectId": 14,
+        "timestamp": 1499452866676
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452881677,
+        "avgIops": 6713,
+        "objectId": 14,
+        "timestamp": 1499452881677
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452896678,
+        "avgIops": 7688,
+        "objectId": 14,
+        "timestamp": 1499452896678
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452911679,
+        "avgIops": 4432,
+        "objectId": 14,
+        "timestamp": 1499452911679
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452926715,
+        "avgIops": 4432,
+        "objectId": 14,
+        "timestamp": 1499452926715
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452941716,
+        "avgIops": 4059,
+        "objectId": 14,
+        "timestamp": 1499452941716
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452956716,
+        "avgIops": 6511,
+        "objectId": 14,
+        "timestamp": 1499452956716
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452971717,
+        "avgIops": 6511,
+        "objectId": 14,
+        "timestamp": 1499452971717
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499452986717,
+        "avgIops": 8612,
+        "objectId": 14,
+        "timestamp": 1499452986717
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453001718,
+        "avgIops": 6973,
+        "objectId": 14,
+        "timestamp": 1499453001718
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453016724,
+        "avgIops": 6973,
+        "objectId": 14,
+        "timestamp": 1499453016724
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453031724,
+        "avgIops": 7021,
+        "objectId": 14,
+        "timestamp": 1499453031724
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453046729,
+        "avgIops": 6571,
+        "objectId": 14,
+        "timestamp": 1499453046729
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453061730,
+        "avgIops": 6571,
+        "objectId": 14,
+        "timestamp": 1499453061730
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453076731,
+        "avgIops": 6784,
+        "objectId": 14,
+        "timestamp": 1499453076731
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453091732,
+        "avgIops": 6784,
+        "objectId": 14,
+        "timestamp": 1499453091732
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453106732,
+        "avgIops": 6603,
+        "objectId": 14,
+        "timestamp": 1499453106732
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453121732,
+        "avgIops": 5779,
+        "objectId": 14,
+        "timestamp": 1499453121732
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453136733,
+        "avgIops": 5779,
+        "objectId": 14,
+        "timestamp": 1499453136733
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453151733,
+        "avgIops": 7323,
+        "objectId": 14,
+        "timestamp": 1499453151733
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453166734,
+        "avgIops": 7007,
+        "objectId": 14,
+        "timestamp": 1499453166734
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453181739,
+        "avgIops": 7007,
+        "objectId": 14,
+        "timestamp": 1499453181739
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453196740,
+        "avgIops": 7583,
+        "objectId": 14,
+        "timestamp": 1499453196740
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453211743,
+        "avgIops": 6347,
+        "objectId": 14,
+        "timestamp": 1499453211743
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453226744,
+        "avgIops": 6347,
+        "objectId": 14,
+        "timestamp": 1499453226744
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453241745,
+        "avgIops": 6852,
+        "objectId": 14,
+        "timestamp": 1499453241745
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453256746,
+        "avgIops": 6852,
+        "objectId": 14,
+        "timestamp": 1499453256746
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453271747,
+        "avgIops": 7227,
+        "objectId": 14,
+        "timestamp": 1499453271747
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453286748,
+        "avgIops": 6166,
+        "objectId": 14,
+        "timestamp": 1499453286748
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453301787,
+        "avgIops": 6166,
+        "objectId": 14,
+        "timestamp": 1499453301787
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453316787,
+        "avgIops": 7575,
+        "objectId": 14,
+        "timestamp": 1499453316787
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453331787,
+        "avgIops": 7479,
+        "objectId": 14,
+        "timestamp": 1499453331787
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453346788,
+        "avgIops": 7479,
+        "objectId": 14,
+        "timestamp": 1499453346788
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453361788,
+        "avgIops": 8182,
+        "objectId": 14,
+        "timestamp": 1499453361788
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453376788,
+        "avgIops": 5828,
+        "objectId": 14,
+        "timestamp": 1499453376788
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453391789,
+        "avgIops": 5828,
+        "objectId": 14,
+        "timestamp": 1499453391789
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453406790,
+        "avgIops": 7355,
+        "objectId": 14,
+        "timestamp": 1499453406790
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453421792,
+        "avgIops": 5554,
+        "objectId": 14,
+        "timestamp": 1499453421792
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453436792,
+        "avgIops": 5554,
+        "objectId": 14,
+        "timestamp": 1499453436792
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453451792,
+        "avgIops": 5582,
+        "objectId": 14,
+        "timestamp": 1499453451792
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453466793,
+        "avgIops": 5341,
+        "objectId": 14,
+        "timestamp": 1499453466793
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453481794,
+        "avgIops": 5341,
+        "objectId": 14,
+        "timestamp": 1499453481794
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453496794,
+        "avgIops": 6266,
+        "objectId": 14,
+        "timestamp": 1499453496794
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453511796,
+        "avgIops": 5904,
+        "objectId": 14,
+        "timestamp": 1499453511796
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453526806,
+        "avgIops": 5904,
+        "objectId": 14,
+        "timestamp": 1499453526806
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453541806,
+        "avgIops": 7277,
+        "objectId": 14,
+        "timestamp": 1499453541806
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453556807,
+        "avgIops": 7277,
+        "objectId": 14,
+        "timestamp": 1499453556807
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453571808,
+        "avgIops": 7111,
+        "objectId": 14,
+        "timestamp": 1499453571808
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453586809,
+        "avgIops": 5091,
+        "objectId": 14,
+        "timestamp": 1499453586809
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453601810,
+        "avgIops": 5091,
+        "objectId": 14,
+        "timestamp": 1499453601810
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453616866,
+        "avgIops": 4386,
+        "objectId": 14,
+        "timestamp": 1499453616866
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453631867,
+        "avgIops": 4386,
+        "objectId": 14,
+        "timestamp": 1499453631867
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453646871,
+        "avgIops": 4760,
+        "objectId": 14,
+        "timestamp": 1499453646871
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453661873,
+        "avgIops": 4760,
+        "objectId": 14,
+        "timestamp": 1499453661873
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453676873,
+        "avgIops": 6779,
+        "objectId": 14,
+        "timestamp": 1499453676873
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453691873,
+        "avgIops": 6779,
+        "objectId": 14,
+        "timestamp": 1499453691873
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453706873,
+        "avgIops": 6545,
+        "objectId": 14,
+        "timestamp": 1499453706873
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453721876,
+        "avgIops": 6004,
+        "objectId": 14,
+        "timestamp": 1499453721876
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453736876,
+        "avgIops": 6004,
+        "objectId": 14,
+        "timestamp": 1499453736876
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453751876,
+        "avgIops": 7203,
+        "objectId": 14,
+        "timestamp": 1499453751876
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453766876,
+        "avgIops": 5641,
+        "objectId": 14,
+        "timestamp": 1499453766876
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453781878,
+        "avgIops": 5641,
+        "objectId": 14,
+        "timestamp": 1499453781878
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453796878,
+        "avgIops": 5851,
+        "objectId": 14,
+        "timestamp": 1499453796878
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453811880,
+        "avgIops": 5851,
+        "objectId": 14,
+        "timestamp": 1499453811880
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453827081,
+        "avgIops": 7044,
+        "objectId": 14,
+        "timestamp": 1499453827081
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453842085,
+        "avgIops": 6777,
+        "objectId": 14,
+        "timestamp": 1499453842085
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453857085,
+        "avgIops": 6777,
+        "objectId": 14,
+        "timestamp": 1499453857085
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453872086,
+        "avgIops": 8135,
+        "objectId": 14,
+        "timestamp": 1499453872086
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453887086,
+        "avgIops": 6023,
+        "objectId": 14,
+        "timestamp": 1499453887086
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453902086,
+        "avgIops": 6023,
+        "objectId": 14,
+        "timestamp": 1499453902086
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453917087,
+        "avgIops": 6538,
+        "objectId": 14,
+        "timestamp": 1499453917087
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453932087,
+        "avgIops": 5469,
+        "objectId": 14,
+        "timestamp": 1499453932087
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453947089,
+        "avgIops": 5469,
+        "objectId": 14,
+        "timestamp": 1499453947089
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453962090,
+        "avgIops": 6485,
+        "objectId": 14,
+        "timestamp": 1499453962090
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453977090,
+        "avgIops": 5424,
+        "objectId": 14,
+        "timestamp": 1499453977090
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499453992091,
+        "avgIops": 5424,
+        "objectId": 14,
+        "timestamp": 1499453992091
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454007092,
+        "avgIops": 8264,
+        "objectId": 14,
+        "timestamp": 1499454007092
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454022092,
+        "avgIops": 8264,
+        "objectId": 14,
+        "timestamp": 1499454022092
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454037096,
+        "avgIops": 7853,
+        "objectId": 14,
+        "timestamp": 1499454037096
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454052101,
+        "avgIops": 6411,
+        "objectId": 14,
+        "timestamp": 1499454052101
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454067103,
+        "avgIops": 6411,
+        "objectId": 14,
+        "timestamp": 1499454067103
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454082107,
+        "avgIops": 6093,
+        "objectId": 14,
+        "timestamp": 1499454082107
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454097107,
+        "avgIops": 4892,
+        "objectId": 14,
+        "timestamp": 1499454097107
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454112108,
+        "avgIops": 4892,
+        "objectId": 14,
+        "timestamp": 1499454112108
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454127109,
+        "avgIops": 5466,
+        "objectId": 14,
+        "timestamp": 1499454127109
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454142109,
+        "avgIops": 3944,
+        "objectId": 14,
+        "timestamp": 1499454142109
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454157114,
+        "avgIops": 3944,
+        "objectId": 14,
+        "timestamp": 1499454157114
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454172114,
+        "avgIops": 5000,
+        "objectId": 14,
+        "timestamp": 1499454172114
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454187114,
+        "avgIops": 5416,
+        "objectId": 14,
+        "timestamp": 1499454187114
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454202115,
+        "avgIops": 5416,
+        "objectId": 14,
+        "timestamp": 1499454202115
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454217115,
+        "avgIops": 5676,
+        "objectId": 14,
+        "timestamp": 1499454217115
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454232119,
+        "avgIops": 5788,
+        "objectId": 14,
+        "timestamp": 1499454232119
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454247122,
+        "avgIops": 5788,
+        "objectId": 14,
+        "timestamp": 1499454247122
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454262122,
+        "avgIops": 6371,
+        "objectId": 14,
+        "timestamp": 1499454262122
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454277128,
+        "avgIops": 4371,
+        "objectId": 14,
+        "timestamp": 1499454277128
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454292130,
+        "avgIops": 4371,
+        "objectId": 14,
+        "timestamp": 1499454292130
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454307133,
+        "avgIops": 3390,
+        "objectId": 14,
+        "timestamp": 1499454307133
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454322133,
+        "avgIops": 4202,
+        "objectId": 14,
+        "timestamp": 1499454322133
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454337133,
+        "avgIops": 4202,
+        "objectId": 14,
+        "timestamp": 1499454337133
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454352135,
+        "avgIops": 6743,
+        "objectId": 14,
+        "timestamp": 1499454352135
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454367136,
+        "avgIops": 6743,
+        "objectId": 14,
+        "timestamp": 1499454367136
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454382137,
+        "avgIops": 7980,
+        "objectId": 14,
+        "timestamp": 1499454382137
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454397137,
+        "avgIops": 7980,
+        "objectId": 14,
+        "timestamp": 1499454397137
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454412138,
+        "avgIops": 8385,
+        "objectId": 14,
+        "timestamp": 1499454412138
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454427139,
+        "avgIops": 5698,
+        "objectId": 14,
+        "timestamp": 1499454427139
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454442140,
+        "avgIops": 6240,
+        "objectId": 14,
+        "timestamp": 1499454442140
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454457140,
+        "avgIops": 6240,
+        "objectId": 14,
+        "timestamp": 1499454457140
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454472142,
+        "avgIops": 6298,
+        "objectId": 14,
+        "timestamp": 1499454472142
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454487142,
+        "avgIops": 6298,
+        "objectId": 14,
+        "timestamp": 1499454487142
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454502143,
+        "avgIops": 6029,
+        "objectId": 14,
+        "timestamp": 1499454502143
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454517143,
+        "avgIops": 6029,
+        "objectId": 14,
+        "timestamp": 1499454517143
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454532143,
+        "avgIops": 6690,
+        "objectId": 14,
+        "timestamp": 1499454532143
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454547144,
+        "avgIops": 6726,
+        "objectId": 14,
+        "timestamp": 1499454547144
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454562144,
+        "avgIops": 6726,
+        "objectId": 14,
+        "timestamp": 1499454562144
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454577144,
+        "avgIops": 7023,
+        "objectId": 14,
+        "timestamp": 1499454577144
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454592146,
+        "avgIops": 4983,
+        "objectId": 14,
+        "timestamp": 1499454592146
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454607150,
+        "avgIops": 4983,
+        "objectId": 14,
+        "timestamp": 1499454607150
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454622153,
+        "avgIops": 6090,
+        "objectId": 14,
+        "timestamp": 1499454622153
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454637153,
+        "avgIops": 5113,
+        "objectId": 14,
+        "timestamp": 1499454637153
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454652154,
+        "avgIops": 5113,
+        "objectId": 14,
+        "timestamp": 1499454652154
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454667166,
+        "avgIops": 6314,
+        "objectId": 14,
+        "timestamp": 1499454667166
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454682166,
+        "avgIops": 6314,
+        "objectId": 14,
+        "timestamp": 1499454682166
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454697168,
+        "avgIops": 6925,
+        "objectId": 14,
+        "timestamp": 1499454697168
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454712173,
+        "avgIops": 5822,
+        "objectId": 14,
+        "timestamp": 1499454712173
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454727173,
+        "avgIops": 5822,
+        "objectId": 14,
+        "timestamp": 1499454727173
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454742175,
+        "avgIops": 7035,
+        "objectId": 14,
+        "timestamp": 1499454742175
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454757180,
+        "avgIops": 5461,
+        "objectId": 14,
+        "timestamp": 1499454757180
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454772181,
+        "avgIops": 5461,
+        "objectId": 14,
+        "timestamp": 1499454772181
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454787181,
+        "avgIops": 6586,
+        "objectId": 14,
+        "timestamp": 1499454787181
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454802186,
+        "avgIops": 5833,
+        "objectId": 14,
+        "timestamp": 1499454802186
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454817189,
+        "avgIops": 5833,
+        "objectId": 14,
+        "timestamp": 1499454817189
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454832189,
+        "avgIops": 6603,
+        "objectId": 14,
+        "timestamp": 1499454832189
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454847190,
+        "avgIops": 5111,
+        "objectId": 14,
+        "timestamp": 1499454847190
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454862190,
+        "avgIops": 5111,
+        "objectId": 14,
+        "timestamp": 1499454862190
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454877192,
+        "avgIops": 6250,
+        "objectId": 14,
+        "timestamp": 1499454877192
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454892193,
+        "avgIops": 6007,
+        "objectId": 14,
+        "timestamp": 1499454892193
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454907193,
+        "avgIops": 6007,
+        "objectId": 14,
+        "timestamp": 1499454907193
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454922193,
+        "avgIops": 7595,
+        "objectId": 14,
+        "timestamp": 1499454922193
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454937193,
+        "avgIops": 5829,
+        "objectId": 14,
+        "timestamp": 1499454937193
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454952193,
+        "avgIops": 5829,
+        "objectId": 14,
+        "timestamp": 1499454952193
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454967194,
+        "avgIops": 6804,
+        "objectId": 14,
+        "timestamp": 1499454967194
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454982195,
+        "avgIops": 4268,
+        "objectId": 14,
+        "timestamp": 1499454982195
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499454997208,
+        "avgIops": 4268,
+        "objectId": 14,
+        "timestamp": 1499454997208
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455012212,
+        "avgIops": 4284,
+        "objectId": 14,
+        "timestamp": 1499455012212
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455027217,
+        "avgIops": 4284,
+        "objectId": 14,
+        "timestamp": 1499455027217
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455042223,
+        "avgIops": 6552,
+        "objectId": 14,
+        "timestamp": 1499455042223
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455057225,
+        "avgIops": 6552,
+        "objectId": 14,
+        "timestamp": 1499455057225
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455072226,
+        "avgIops": 7273,
+        "objectId": 14,
+        "timestamp": 1499455072226
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455087226,
+        "avgIops": 5446,
+        "objectId": 14,
+        "timestamp": 1499455087226
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455102228,
+        "avgIops": 5446,
+        "objectId": 14,
+        "timestamp": 1499455102228
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455117228,
+        "avgIops": 6389,
+        "objectId": 14,
+        "timestamp": 1499455117228
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455132232,
+        "avgIops": 5952,
+        "objectId": 14,
+        "timestamp": 1499455132232
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455147232,
+        "avgIops": 5952,
+        "objectId": 14,
+        "timestamp": 1499455147232
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455162233,
+        "avgIops": 6338,
+        "objectId": 14,
+        "timestamp": 1499455162233
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455177233,
+        "avgIops": 6338,
+        "objectId": 14,
+        "timestamp": 1499455177233
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455192238,
+        "avgIops": 6325,
+        "objectId": 14,
+        "timestamp": 1499455192238
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455207239,
+        "avgIops": 5495,
+        "objectId": 14,
+        "timestamp": 1499455207239
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455222240,
+        "avgIops": 5495,
+        "objectId": 14,
+        "timestamp": 1499455222240
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455237241,
+        "avgIops": 7621,
+        "objectId": 14,
+        "timestamp": 1499455237241
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455252242,
+        "avgIops": 6259,
+        "objectId": 14,
+        "timestamp": 1499455252242
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455267242,
+        "avgIops": 6259,
+        "objectId": 14,
+        "timestamp": 1499455267242
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455282243,
+        "avgIops": 7252,
+        "objectId": 14,
+        "timestamp": 1499455282243
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455297243,
+        "avgIops": 7252,
+        "objectId": 14,
+        "timestamp": 1499455297243
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455312245,
+        "avgIops": 7454,
+        "objectId": 14,
+        "timestamp": 1499455312245
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455327246,
+        "avgIops": 6789,
+        "objectId": 14,
+        "timestamp": 1499455327246
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455342246,
+        "avgIops": 6789,
+        "objectId": 14,
+        "timestamp": 1499455342246
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455357248,
+        "avgIops": 6479,
+        "objectId": 14,
+        "timestamp": 1499455357248
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455372248,
+        "avgIops": 5158,
+        "objectId": 14,
+        "timestamp": 1499455372248
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455387291,
+        "avgIops": 5158,
+        "objectId": 14,
+        "timestamp": 1499455387291
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455402292,
+        "avgIops": 6740,
+        "objectId": 14,
+        "timestamp": 1499455402292
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455417294,
+        "avgIops": 6740,
+        "objectId": 14,
+        "timestamp": 1499455417294
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455432294,
+        "avgIops": 7012,
+        "objectId": 14,
+        "timestamp": 1499455432294
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455447295,
+        "avgIops": 5891,
+        "objectId": 14,
+        "timestamp": 1499455447295
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455462322,
+        "avgIops": 5891,
+        "objectId": 14,
+        "timestamp": 1499455462322
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455477322,
+        "avgIops": 6953,
+        "objectId": 14,
+        "timestamp": 1499455477322
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455492323,
+        "avgIops": 5648,
+        "objectId": 14,
+        "timestamp": 1499455492323
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455507323,
+        "avgIops": 5648,
+        "objectId": 14,
+        "timestamp": 1499455507323
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455522323,
+        "avgIops": 5799,
+        "objectId": 14,
+        "timestamp": 1499455522323
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455537323,
+        "avgIops": 5042,
+        "objectId": 14,
+        "timestamp": 1499455537323
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455552323,
+        "avgIops": 5042,
+        "objectId": 14,
+        "timestamp": 1499455552323
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455567324,
+        "avgIops": 6807,
+        "objectId": 14,
+        "timestamp": 1499455567324
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455582325,
+        "avgIops": 6142,
+        "objectId": 14,
+        "timestamp": 1499455582325
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455597325,
+        "avgIops": 6142,
+        "objectId": 14,
+        "timestamp": 1499455597325
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455612328,
+        "avgIops": 7002,
+        "objectId": 14,
+        "timestamp": 1499455612328
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455627328,
+        "avgIops": 5437,
+        "objectId": 14,
+        "timestamp": 1499455627328
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455642330,
+        "avgIops": 5437,
+        "objectId": 14,
+        "timestamp": 1499455642330
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455657331,
+        "avgIops": 6423,
+        "objectId": 14,
+        "timestamp": 1499455657331
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455672332,
+        "avgIops": 4408,
+        "objectId": 14,
+        "timestamp": 1499455672332
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455687333,
+        "avgIops": 4408,
+        "objectId": 14,
+        "timestamp": 1499455687333
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455702334,
+        "avgIops": 3764,
+        "objectId": 14,
+        "timestamp": 1499455702334
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455717341,
+        "avgIops": 3764,
+        "objectId": 14,
+        "timestamp": 1499455717341
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455732341,
+        "avgIops": 5857,
+        "objectId": 14,
+        "timestamp": 1499455732341
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455747346,
+        "avgIops": 5857,
+        "objectId": 14,
+        "timestamp": 1499455747346
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455762346,
+        "avgIops": 7036,
+        "objectId": 14,
+        "timestamp": 1499455762346
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455777350,
+        "avgIops": 6145,
+        "objectId": 14,
+        "timestamp": 1499455777350
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455792351,
+        "avgIops": 6145,
+        "objectId": 14,
+        "timestamp": 1499455792351
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455807352,
+        "avgIops": 6841,
+        "objectId": 14,
+        "timestamp": 1499455807352
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455822353,
+        "avgIops": 6385,
+        "objectId": 14,
+        "timestamp": 1499455822353
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455837354,
+        "avgIops": 6385,
+        "objectId": 14,
+        "timestamp": 1499455837354
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455852384,
+        "avgIops": 4983,
+        "objectId": 14,
+        "timestamp": 1499455852384
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455867385,
+        "avgIops": 4983,
+        "objectId": 14,
+        "timestamp": 1499455867385
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455882385,
+        "avgIops": 3732,
+        "objectId": 14,
+        "timestamp": 1499455882385
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455897388,
+        "avgIops": 4233,
+        "objectId": 14,
+        "timestamp": 1499455897388
+      },
+      {
+        "inode": 86518,
+        "clientId": 3,
+        "instanceId": 519,
+        "time": 1499455912388,
+        "avgIops": 4233,
+        "objectId": 14,
+        "timestamp": 1499455912388
+      }
+    ]
+  }
+]

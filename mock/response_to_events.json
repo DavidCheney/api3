@@ -1,1 +1,1081 @@
-[{"uoid":{"uuid":"645a605f-90d1-4c88-a820-6569ddd2ae43","objectType":"EVENT"},"created":"1504406551705","modified":"1504406551705","extendedInfo":{},"comment":null,"sequence":"24","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"],"clearTime":"1504406852520","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"64ff242c-6c63-4992-bfa7-55b834a93f3b","objectType":"EVENT"},"created":"1504400400264","modified":"1504400400264","extendedInfo":{},"comment":null,"sequence":"23","type":"DEFAULT_LICENSE_ABOUT_TO_EXPIRE","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"WARNING","params":["2"],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"3b8a07dc-231f-4e09-96bd-08c2c4f869f7","objectType":"EVENT"},"created":"1504398436527","modified":"1504398436527","extendedInfo":{},"comment":null,"sequence":"22","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"],"clearTime":"1504398737134","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"dbbd790e-e60c-443a-a32a-0374bcbba6ba","objectType":"EVENT"},"created":"1504396032015","modified":"1504396032015","extendedInfo":{},"comment":null,"sequence":"21","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"],"clearTime":"1504396332752","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"92be9de0-85d7-463c-b6d6-90dd6d396e9d","objectType":"EVENT"},"created":"1504373493766","modified":"1504373493766","extendedInfo":{},"comment":null,"sequence":"20","type":"UPDATE_FAILED","sourceId":{"uuid":"222dfb43-0307-4ac0-a0af-7956181a7b25","objectType":"NETWORK_IF"},"sourceName":"pddata","severity":"INFORMATIONAL","params":["network interface","pddata","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"32e7e658-767f-4bce-a85d-246017d725f6","objectType":"EVENT"},"created":"1504373286502","modified":"1504373286502","extendedInfo":{},"comment":null,"sequence":"19","type":"UPDATE_FAILED","sourceId":{"uuid":"222dfb43-0307-4ac0-a0af-7956181a7b25","objectType":"NETWORK_IF"},"sourceName":"pddata","severity":"INFORMATIONAL","params":["network interface","pddata","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"6dae63b4-b63f-4337-8f6e-5c5e87acf8f1","objectType":"EVENT"},"created":"1504372925313","modified":"1496959597985","extendedInfo":{},"comment":null,"sequence":"18","type":"VOLUME_OPER_STATE_CHANGED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ERROR","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","SUSPECTED"],"clearTime":"1497058488313","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":3},{"uoid":{"uuid":"39c56673-8693-45b1-bad5-995067e33c5a","objectType":"EVENT"},"created":"1504372888544","modified":"1496959559017","extendedInfo":{},"comment":null,"sequence":"17","type":"VOLUME_OPER_STATE_CHANGED","sourceId":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","severity":"ERROR","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","SUSPECTED"],"clearTime":"1497058538347","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":3},{"uoid":{"uuid":"dcc31c4f-cb08-4a82-9024-274d8fdf46bf","objectType":"EVENT"},"created":"1504372607507","modified":"1504372607507","extendedInfo":{},"comment":null,"sequence":"16","type":"NODE_STATE_CHANGED","sourceId":{"uuid":"2c1757b8-472a-5b10-b74f-4a5423400ff2","objectType":"NODE"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com","severity":"ALERT","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com","2c1757b8-472a-5b10-b74f-4a5423400ff2"],"clearTime":"1497058509096","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"d061025f-adfb-453a-85d2-1728aff64e9e","objectType":"EVENT"},"created":"1504372606583","modified":"1504372606583","extendedInfo":{},"comment":null,"sequence":"15","type":"UPDATE_FAILED","sourceId":{"uuid":"222dfb43-0307-4ac0-a0af-7956181a7b25","objectType":"NETWORK_IF"},"sourceName":"pddata","severity":"INFORMATIONAL","params":["network interface","pddata","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"4ccf6148-80cc-4c24-8b52-972526b12126","objectType":"EVENT"},"created":"1504365570850","modified":"1504365570850","extendedInfo":{},"comment":null,"sequence":"14","type":"DEFAULT_LICENSE_ABOUT_TO_EXPIRE","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"WARNING","params":["2"],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"50c35af0-6080-4ff5-aafa-59e196a4261c","objectType":"EVENT"},"created":"1504365569017","modified":"1504365569017","extendedInfo":{},"comment":null,"sequence":"13","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"ee508330-e1ae-45d9-ad79-602e04a96f41","objectType":"EVENT"},"created":"1498610875436","modified":"1498610875436","extendedInfo":{},"comment":null,"sequence":"35","type":"SOFTWARE_VERSION_CHANGED","sourceId":{"uuid":"2c1757b8-472a-5b10-b74f-4a5423400ff2","objectType":"NODE"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com","severity":"INFORMATIONAL","params":["2.0.0-17","2.0.0-64","pdux-ds1-uiux-060617145331978.lab.primarydata.com"],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"510227ed-6ca1-49ee-b53b-c4dd59e4fe48","objectType":"EVENT"},"created":"1498610672724","modified":"1498610672724","extendedInfo":{},"comment":null,"sequence":"34","type":"NODE_STATE_CHANGED","sourceId":{"uuid":"2c1757b8-472a-5b10-b74f-4a5423400ff2","objectType":"NODE"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com","severity":"ALERT","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com","2c1757b8-472a-5b10-b74f-4a5423400ff2"],"clearTime":"1498610744045","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"1da99537-64f7-4b5c-a4fc-a0d88c8c8311","objectType":"EVENT"},"created":"1498608581787","modified":"1498608581787","extendedInfo":{},"comment":null,"sequence":"33","type":"SOFTWARE_VERSION_CHANGED","sourceId":{"uuid":"5e5ccc5c-acd5-58b7-b791-611cd1b2ba29","objectType":"NODE"},"sourceName":"pdux-dd1-uiux-060617145043481.lab.primarydata.com","severity":"INFORMATIONAL","params":["2.0.0-17","2.0.0-64","pdux-dd1-uiux-060617145043481.lab.primarydata.com"],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"c5f87b29-4b94-46d3-b535-6f0b953dc314","objectType":"EVENT"},"created":"1498608409563","modified":"1498608409563","extendedInfo":{},"comment":null,"sequence":"32","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"a1ce762e-93cb-40ce-b4e8-d4c776ab63b9","objectType":"EVENT"},"created":"1497318018581","modified":"1498608840622","extendedInfo":{},"comment":null,"sequence":"31","type":"VOLUME_OPER_STATE_CHANGED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ERROR","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","SUSPECTED"],"clearTime":"1498610115890","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":2},{"uoid":{"uuid":"da8e4269-c203-470f-8c9b-1d9f6a527e4e","objectType":"EVENT"},"created":"1497317979188","modified":"1498608802493","extendedInfo":{},"comment":null,"sequence":"30","type":"VOLUME_OPER_STATE_CHANGED","sourceId":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","severity":"ERROR","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","SUSPECTED"],"clearTime":"1498610147528","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":2},{"uoid":{"uuid":"33cead28-48bd-4ad9-84df-24afc28e705e","objectType":"EVENT"},"created":"1497317712571","modified":"1497317712571","extendedInfo":{},"comment":null,"sequence":"29","type":"NODE_STATE_CHANGED","sourceId":{"uuid":"2c1757b8-472a-5b10-b74f-4a5423400ff2","objectType":"NODE"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com","severity":"ALERT","params":["pdux-ds1-uiux-060617145331978.lab.primarydata.com","2c1757b8-472a-5b10-b74f-4a5423400ff2"],"clearTime":"1498609964433","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":1},{"uoid":{"uuid":"bdcd98ac-3b96-4564-b882-db427611ca73","objectType":"EVENT"},"created":"1497023105201","modified":"1497023105201","extendedInfo":{},"comment":null,"sequence":"28","type":"ADDED","sourceId":{"uuid":"235f2592-5b6b-4d5e-a62a-502d489d986a","objectType":"USER"},"sourceName":"dcheney","severity":"INFORMATIONAL","params":["user","dcheney","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"8f2b0507-fc40-4134-af16-0c3454708f57","objectType":"EVENT"},"created":"1496959102429","modified":"1496959102429","extendedInfo":{},"comment":null,"sequence":"27","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"31a2f334-e58f-4b9a-9ddf-1ea03c744dd5","objectType":"EVENT"},"created":"1496930407223","modified":"1496930407223","extendedInfo":{},"comment":null,"sequence":"26","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"291f0249-fc7b-44cb-ab0c-2177ebbf3f84","objectType":"EVENT"},"created":"1496916986926","modified":"1496916986926","extendedInfo":{},"comment":null,"sequence":"25","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1},{"uoid":{"uuid":"700ce0c0-fc0a-4d5c-9641-6bd2414f97e9","objectType":"EVENT"},"created":"1496780434399","modified":"1496780434399","extendedInfo":{},"comment":null,"sequence":"12","type":"ADDED","sourceId":{"uuid":"145d8c05-b768-11e4-b9a8-123478563412","objectType":"NODE"},"sourceName":"Netapp_C_mode","severity":"INFORMATIONAL","params":["node","Netapp_C_mode","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"eb6a0396-dd19-4227-ab15-a43c45e1f10f","objectType":"EVENT"},"created":"1496766732745","modified":"1499455431562","extendedInfo":{},"comment":null,"sequence":"11","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1"],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":false,"count":8883},{"uoid":{"uuid":"cf0ae3d7-e88c-4329-8e1a-cbeca06c87ac","objectType":"EVENT"},"created":"1496765177168","modified":"1496765177168","extendedInfo":{},"comment":null,"sequence":"10","type":"UPDATED","sourceId":{"uuid":"43008a9e-4852-493b-9563-93b8ad794b14","objectType":"SHARE"},"sourceName":"UXellence","severity":"INFORMATIONAL","params":["share","UXellence","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"ddf605ad-c43d-4a76-b147-88a19ae226b2","objectType":"EVENT"},"created":"1496765153916","modified":"1496765153916","extendedInfo":{},"comment":null,"sequence":"9","type":"UPDATED","sourceId":{"uuid":"43008a9e-4852-493b-9563-93b8ad794b14","objectType":"SHARE"},"sourceName":"UXellence","severity":"INFORMATIONAL","params":["share","UXellence","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"8e22e135-cfa0-4679-b4f4-7673d8558ef0","objectType":"EVENT"},"created":"1496764138238","modified":"1496764138238","extendedInfo":{},"comment":null,"sequence":"8","type":"ADDED","sourceId":{"uuid":"43008a9e-4852-493b-9563-93b8ad794b14","objectType":"SHARE"},"sourceName":"UXellence","severity":"INFORMATIONAL","params":["share","UXellence","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"fc4155ea-9fc4-45d5-a8d3-1298b6f9dbf3","objectType":"EVENT"},"created":"1496764074090","modified":"1496764074090","extendedInfo":{},"comment":null,"sequence":"7","type":"UPDATED","sourceId":{"uuid":"43008a9e-4852-493b-9563-93b8ad794b14","objectType":"SHARE"},"sourceName":"UXellence","severity":"INFORMATIONAL","params":["share","UXellence","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"519f5e8d-6a78-4be5-b316-e3f799c75357","objectType":"EVENT"},"created":"1496764028087","modified":"1504372608033","extendedInfo":{},"comment":null,"sequence":"6","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"],"clearTime":"1504372908699","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":390},{"uoid":{"uuid":"a4804f46-5508-4871-8c75-092deaf39d90","objectType":"EVENT"},"created":"1496764028052","modified":"1496766132123","extendedInfo":{},"comment":null,"sequence":"5","type":"WRITE_LATENCY_THRESHOLD_CROSSED","sourceId":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","severity":"ALERT","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1"],"clearTime":"1496766432267","createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":"cluster","activity":false,"cleared":true,"count":8},{"uoid":{"uuid":"1850836a-5f8c-470b-8b3c-217eb0a09652","objectType":"EVENT"},"created":"1496763888269","modified":"1496763888269","extendedInfo":{},"comment":null,"sequence":"4","type":"ADDED","sourceId":{"uuid":"b9136fbf-3bb0-49e6-99ef-2f1acdd67431","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","severity":"INFORMATIONAL","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"a6ca2e22-0882-4aaf-9b3e-455d5e5a874a","objectType":"EVENT"},"created":"1496763793448","modified":"1496763793448","extendedInfo":{},"comment":null,"sequence":"3","type":"ADDED","sourceId":{"uuid":"688435ab-219a-4b2c-aab1-756d9f8dd3b9","objectType":"STORAGE_VOLUME"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","severity":"INFORMATIONAL","params":["storage volume","pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"a33b39e8-131c-4a6d-aa04-ac93bc0181d9","objectType":"EVENT"},"created":"1496763526510","modified":"1496763526510","extendedInfo":{},"comment":null,"sequence":"2","type":"ADDED","sourceId":{"uuid":"2c1757b8-472a-5b10-b74f-4a5423400ff2","objectType":"NODE"},"sourceName":"pdux-ds1-uiux-060617145331978.lab.primarydata.com","severity":"INFORMATIONAL","params":["node","pdux-ds1-uiux-060617145331978.lab.primarydata.com","admin"],"clearTime":null,"createdById":{"uuid":"936d9cde-187b-403e-9a67-cc000650bebf","objectType":"USER"},"createdByName":"admin","activity":true,"cleared":false,"count":1},{"uoid":{"uuid":"721433bc-6e06-4e7b-b5e6-06b004298d3e","objectType":"EVENT"},"created":"1496761916682","modified":"1496761916682","extendedInfo":{},"comment":null,"sequence":"1","type":"MGMT_STARTED","sourceId":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"sourceName":"cluster","severity":"INFORMATIONAL","params":[],"clearTime":null,"createdById":{"uuid":"39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd","objectType":"CLUSTER"},"createdByName":null,"activity":false,"cleared":false,"count":1}]
+[
+  {
+    "uoid": {
+      "uuid": "645a605f-90d1-4c88-a820-6569ddd2ae43",
+      "objectType": "EVENT"
+    },
+    "created": "1504406551705",
+    "modified": "1504406551705",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "24",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"
+    ],
+    "clearTime": "1504406852520",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "64ff242c-6c63-4992-bfa7-55b834a93f3b",
+      "objectType": "EVENT"
+    },
+    "created": "1504400400264",
+    "modified": "1504400400264",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "23",
+    "type": "DEFAULT_LICENSE_ABOUT_TO_EXPIRE",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "WARNING",
+    "params": [
+      "2"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "3b8a07dc-231f-4e09-96bd-08c2c4f869f7",
+      "objectType": "EVENT"
+    },
+    "created": "1504398436527",
+    "modified": "1504398436527",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "22",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"
+    ],
+    "clearTime": "1504398737134",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "dbbd790e-e60c-443a-a32a-0374bcbba6ba",
+      "objectType": "EVENT"
+    },
+    "created": "1504396032015",
+    "modified": "1504396032015",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "21",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"
+    ],
+    "clearTime": "1504396332752",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "92be9de0-85d7-463c-b6d6-90dd6d396e9d",
+      "objectType": "EVENT"
+    },
+    "created": "1504373493766",
+    "modified": "1504373493766",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "20",
+    "type": "UPDATE_FAILED",
+    "sourceId": {
+      "uuid": "222dfb43-0307-4ac0-a0af-7956181a7b25",
+      "objectType": "NETWORK_IF"
+    },
+    "sourceName": "pddata",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "network interface",
+      "pddata",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "32e7e658-767f-4bce-a85d-246017d725f6",
+      "objectType": "EVENT"
+    },
+    "created": "1504373286502",
+    "modified": "1504373286502",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "19",
+    "type": "UPDATE_FAILED",
+    "sourceId": {
+      "uuid": "222dfb43-0307-4ac0-a0af-7956181a7b25",
+      "objectType": "NETWORK_IF"
+    },
+    "sourceName": "pddata",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "network interface",
+      "pddata",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "6dae63b4-b63f-4337-8f6e-5c5e87acf8f1",
+      "objectType": "EVENT"
+    },
+    "created": "1504372925313",
+    "modified": "1496959597985",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "18",
+    "type": "VOLUME_OPER_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ERROR",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+      "SUSPECTED"
+    ],
+    "clearTime": "1497058488313",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 3
+  },
+  {
+    "uoid": {
+      "uuid": "39c56673-8693-45b1-bad5-995067e33c5a",
+      "objectType": "EVENT"
+    },
+    "created": "1504372888544",
+    "modified": "1496959559017",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "17",
+    "type": "VOLUME_OPER_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+    "severity": "ERROR",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+      "SUSPECTED"
+    ],
+    "clearTime": "1497058538347",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 3
+  },
+  {
+    "uoid": {
+      "uuid": "dcc31c4f-cb08-4a82-9024-274d8fdf46bf",
+      "objectType": "EVENT"
+    },
+    "created": "1504372607507",
+    "modified": "1504372607507",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "16",
+    "type": "NODE_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "2c1757b8-472a-5b10-b74f-4a5423400ff2",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+    "severity": "ALERT",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+      "2c1757b8-472a-5b10-b74f-4a5423400ff2"
+    ],
+    "clearTime": "1497058509096",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "d061025f-adfb-453a-85d2-1728aff64e9e",
+      "objectType": "EVENT"
+    },
+    "created": "1504372606583",
+    "modified": "1504372606583",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "15",
+    "type": "UPDATE_FAILED",
+    "sourceId": {
+      "uuid": "222dfb43-0307-4ac0-a0af-7956181a7b25",
+      "objectType": "NETWORK_IF"
+    },
+    "sourceName": "pddata",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "network interface",
+      "pddata",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "4ccf6148-80cc-4c24-8b52-972526b12126",
+      "objectType": "EVENT"
+    },
+    "created": "1504365570850",
+    "modified": "1504365570850",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "14",
+    "type": "DEFAULT_LICENSE_ABOUT_TO_EXPIRE",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "WARNING",
+    "params": [
+      "2"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "50c35af0-6080-4ff5-aafa-59e196a4261c",
+      "objectType": "EVENT"
+    },
+    "created": "1504365569017",
+    "modified": "1504365569017",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "13",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "ee508330-e1ae-45d9-ad79-602e04a96f41",
+      "objectType": "EVENT"
+    },
+    "created": "1498610875436",
+    "modified": "1498610875436",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "35",
+    "type": "SOFTWARE_VERSION_CHANGED",
+    "sourceId": {
+      "uuid": "2c1757b8-472a-5b10-b74f-4a5423400ff2",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "2.0.0-17",
+      "2.0.0-64",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "510227ed-6ca1-49ee-b53b-c4dd59e4fe48",
+      "objectType": "EVENT"
+    },
+    "created": "1498610672724",
+    "modified": "1498610672724",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "34",
+    "type": "NODE_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "2c1757b8-472a-5b10-b74f-4a5423400ff2",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+    "severity": "ALERT",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+      "2c1757b8-472a-5b10-b74f-4a5423400ff2"
+    ],
+    "clearTime": "1498610744045",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "1da99537-64f7-4b5c-a4fc-a0d88c8c8311",
+      "objectType": "EVENT"
+    },
+    "created": "1498608581787",
+    "modified": "1498608581787",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "33",
+    "type": "SOFTWARE_VERSION_CHANGED",
+    "sourceId": {
+      "uuid": "5e5ccc5c-acd5-58b7-b791-611cd1b2ba29",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-dd1-uiux-060617145043481.lab.primarydata.com",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "2.0.0-17",
+      "2.0.0-64",
+      "pdux-dd1-uiux-060617145043481.lab.primarydata.com"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "c5f87b29-4b94-46d3-b535-6f0b953dc314",
+      "objectType": "EVENT"
+    },
+    "created": "1498608409563",
+    "modified": "1498608409563",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "32",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "a1ce762e-93cb-40ce-b4e8-d4c776ab63b9",
+      "objectType": "EVENT"
+    },
+    "created": "1497318018581",
+    "modified": "1498608840622",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "31",
+    "type": "VOLUME_OPER_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ERROR",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+      "SUSPECTED"
+    ],
+    "clearTime": "1498610115890",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 2
+  },
+  {
+    "uoid": {
+      "uuid": "da8e4269-c203-470f-8c9b-1d9f6a527e4e",
+      "objectType": "EVENT"
+    },
+    "created": "1497317979188",
+    "modified": "1498608802493",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "30",
+    "type": "VOLUME_OPER_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+    "severity": "ERROR",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+      "SUSPECTED"
+    ],
+    "clearTime": "1498610147528",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 2
+  },
+  {
+    "uoid": {
+      "uuid": "33cead28-48bd-4ad9-84df-24afc28e705e",
+      "objectType": "EVENT"
+    },
+    "created": "1497317712571",
+    "modified": "1497317712571",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "29",
+    "type": "NODE_STATE_CHANGED",
+    "sourceId": {
+      "uuid": "2c1757b8-472a-5b10-b74f-4a5423400ff2",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+    "severity": "ALERT",
+    "params": [
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+      "2c1757b8-472a-5b10-b74f-4a5423400ff2"
+    ],
+    "clearTime": "1498609964433",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "bdcd98ac-3b96-4564-b882-db427611ca73",
+      "objectType": "EVENT"
+    },
+    "created": "1497023105201",
+    "modified": "1497023105201",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "28",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "235f2592-5b6b-4d5e-a62a-502d489d986a",
+      "objectType": "USER"
+    },
+    "sourceName": "dcheney",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "user",
+      "dcheney",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "8f2b0507-fc40-4134-af16-0c3454708f57",
+      "objectType": "EVENT"
+    },
+    "created": "1496959102429",
+    "modified": "1496959102429",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "27",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "31a2f334-e58f-4b9a-9ddf-1ea03c744dd5",
+      "objectType": "EVENT"
+    },
+    "created": "1496930407223",
+    "modified": "1496930407223",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "26",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "291f0249-fc7b-44cb-ab0c-2177ebbf3f84",
+      "objectType": "EVENT"
+    },
+    "created": "1496916986926",
+    "modified": "1496916986926",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "25",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "700ce0c0-fc0a-4d5c-9641-6bd2414f97e9",
+      "objectType": "EVENT"
+    },
+    "created": "1496780434399",
+    "modified": "1496780434399",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "12",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "145d8c05-b768-11e4-b9a8-123478563412",
+      "objectType": "NODE"
+    },
+    "sourceName": "Netapp_C_mode",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "node",
+      "Netapp_C_mode",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "eb6a0396-dd19-4227-ab15-a43c45e1f10f",
+      "objectType": "EVENT"
+    },
+    "created": "1496766732745",
+    "modified": "1499455431562",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "11",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": false,
+    "count": 8883
+  },
+  {
+    "uoid": {
+      "uuid": "cf0ae3d7-e88c-4329-8e1a-cbeca06c87ac",
+      "objectType": "EVENT"
+    },
+    "created": "1496765177168",
+    "modified": "1496765177168",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "10",
+    "type": "UPDATED",
+    "sourceId": {
+      "uuid": "43008a9e-4852-493b-9563-93b8ad794b14",
+      "objectType": "SHARE"
+    },
+    "sourceName": "UXellence",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "share",
+      "UXellence",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "ddf605ad-c43d-4a76-b147-88a19ae226b2",
+      "objectType": "EVENT"
+    },
+    "created": "1496765153916",
+    "modified": "1496765153916",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "9",
+    "type": "UPDATED",
+    "sourceId": {
+      "uuid": "43008a9e-4852-493b-9563-93b8ad794b14",
+      "objectType": "SHARE"
+    },
+    "sourceName": "UXellence",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "share",
+      "UXellence",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "8e22e135-cfa0-4679-b4f4-7673d8558ef0",
+      "objectType": "EVENT"
+    },
+    "created": "1496764138238",
+    "modified": "1496764138238",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "8",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "43008a9e-4852-493b-9563-93b8ad794b14",
+      "objectType": "SHARE"
+    },
+    "sourceName": "UXellence",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "share",
+      "UXellence",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "fc4155ea-9fc4-45d5-a8d3-1298b6f9dbf3",
+      "objectType": "EVENT"
+    },
+    "created": "1496764074090",
+    "modified": "1496764074090",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "7",
+    "type": "UPDATED",
+    "sourceId": {
+      "uuid": "43008a9e-4852-493b-9563-93b8ad794b14",
+      "objectType": "SHARE"
+    },
+    "sourceName": "UXellence",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "share",
+      "UXellence",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "519f5e8d-6a78-4be5-b316-e3f799c75357",
+      "objectType": "EVENT"
+    },
+    "created": "1496764028087",
+    "modified": "1504372608033",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "6",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0"
+    ],
+    "clearTime": "1504372908699",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 390
+  },
+  {
+    "uoid": {
+      "uuid": "a4804f46-5508-4871-8c75-092deaf39d90",
+      "objectType": "EVENT"
+    },
+    "created": "1496764028052",
+    "modified": "1496766132123",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "5",
+    "type": "WRITE_LATENCY_THRESHOLD_CROSSED",
+    "sourceId": {
+      "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+    "severity": "ALERT",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1"
+    ],
+    "clearTime": "1496766432267",
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": "cluster",
+    "activity": false,
+    "cleared": true,
+    "count": 8
+  },
+  {
+    "uoid": {
+      "uuid": "1850836a-5f8c-470b-8b3c-217eb0a09652",
+      "objectType": "EVENT"
+    },
+    "created": "1496763888269",
+    "modified": "1496763888269",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "4",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "b9136fbf-3bb0-49e6-99ef-2f1acdd67431",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export0",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "a6ca2e22-0882-4aaf-9b3e-455d5e5a874a",
+      "objectType": "EVENT"
+    },
+    "created": "1496763793448",
+    "modified": "1496763793448",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "3",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+      "objectType": "STORAGE_VOLUME"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "storage volume",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "a33b39e8-131c-4a6d-aa04-ac93bc0181d9",
+      "objectType": "EVENT"
+    },
+    "created": "1496763526510",
+    "modified": "1496763526510",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "2",
+    "type": "ADDED",
+    "sourceId": {
+      "uuid": "2c1757b8-472a-5b10-b74f-4a5423400ff2",
+      "objectType": "NODE"
+    },
+    "sourceName": "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+    "severity": "INFORMATIONAL",
+    "params": [
+      "node",
+      "pdux-ds1-uiux-060617145331978.lab.primarydata.com",
+      "admin"
+    ],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "936d9cde-187b-403e-9a67-cc000650bebf",
+      "objectType": "USER"
+    },
+    "createdByName": "admin",
+    "activity": true,
+    "cleared": false,
+    "count": 1
+  },
+  {
+    "uoid": {
+      "uuid": "721433bc-6e06-4e7b-b5e6-06b004298d3e",
+      "objectType": "EVENT"
+    },
+    "created": "1496761916682",
+    "modified": "1496761916682",
+    "extendedInfo": {},
+    "comment": null,
+    "sequence": "1",
+    "type": "MGMT_STARTED",
+    "sourceId": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "sourceName": "cluster",
+    "severity": "INFORMATIONAL",
+    "params": [],
+    "clearTime": null,
+    "createdById": {
+      "uuid": "39ef32e5-7ea0-45a8-a06f-4d77bd01c9dd",
+      "objectType": "CLUSTER"
+    },
+    "createdByName": null,
+    "activity": false,
+    "cleared": false,
+    "count": 1
+  }
+]
