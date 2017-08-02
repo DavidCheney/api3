@@ -1,11 +1,11 @@
-#################    use in the browser with GraphiQL    ################
-#################  queries - click the RUN arrow above.  ################
-##############  Query Variables at the bottom of the file  ##############
+#############    use in the browser with GraphiQL    ##############
+#############  queries - click the RUN arrow above.  ##############
+#############      see also query_variables.txt      ##############
 
 
 ##### DataSphere
 
-query VirtualPrivateDataSphereMeta {
+query DataSphereMeta {
   dataSphere {
     admins {
       ...UserAuth
@@ -112,21 +112,6 @@ query GetShare($shareUoid:String) {
   }
 }
 
-query GetFileSystems {
-  storage {
-    id {
-      name
-    }
-    volumes {
-      capabilities {
-        filesystem {
-          ...Filesystem
-        }
-      }
-    }
-  }
-}
-
 query GetVolumeCapabilities {
   storage {
     ...StorageVolumeCapabilities
@@ -179,6 +164,17 @@ query GetStorageResourcesOfType($type:ResourceType) {
 
 
 ##### Files
+
+query GetFileSystems {
+  storage {
+    id {
+      name
+    }
+    filesystems {
+      ...Filesystem
+    }
+  }
+}
 
 query GetFiles ($fileType:FileType=FILE) {
   files(type:$fileType) {
@@ -249,30 +245,30 @@ query GetActivity {
   }
 }
 
-query GetCapacity ($skipMoeBreakdowns:Boolean=false) {
+query GetCapacity ($skipActivityBreakdowns:Boolean=false) {
   capacity {
     max
-    ...MoeData @skip(if:$skipMoeBreakdowns)
+    ...SmActivityData @skip(if:$skipActivityBreakdowns)
   }
 }
 
-query GetPerformance ($skipMoeBreakdowns:Boolean=false) {
+query GetPerformance ($skipActivityBreakdowns:Boolean=false) {
   performance {
     max
-    ...MoeData @skip(if:$skipMoeBreakdowns)
+    ...SmActivityData @skip(if:$skipActivityBreakdowns)
   }
 }
 
-query GetAlignment ($skipMoeBreakdowns:Boolean=false) {
+query GetAlignment ($skipActivityBreakdowns:Boolean=false) {
   alignment {
     max
-    ...MoeData @skip(if:$skipMoeBreakdowns)
+    ...SmActivityData @skip(if:$skipActivityBreakdowns)
   }
 }
 
 
 
-##########  fragments are not queryable  ########################################
+##########  fragments are not queryable  ##########################
 
 fragment StorageResources on StorageResources {
   shares {
@@ -325,11 +321,8 @@ fragment StorageVolumeCapabilities on StorageResources {
 }
 
 fragment Capabilities on StorageCapabilities {
-  filesystem {
-	  ...Filesystem
-  }
-	capacities {
-		...Capacities
+  capacities {
+	...Capacities
   }
   bandwidths {
     ...Bandwidths
@@ -342,13 +335,17 @@ fragment Capabilities on StorageCapabilities {
   }
 }
 
-fragment Filesystem on FilesystemCapabilities {
+fragment Filesystem on Filesystem {
   totalInodes
   availableInodes
   usedInodes
   otherInodes
-  nonCompliantFiles
-  severelyNonCompliantFiles
+  nonCompliantFiles {
+    ...FilePath
+  }
+  severelyNonCompliantFiles {
+    ...PDFile
+  }
 }
 
 fragment Capacities on Capacities {
@@ -419,7 +416,6 @@ fragment PDFile on File {
 fragment FilePath on File {
   path
   shareName
-  sharePath
 }
 
 fragment FilePermissions on File {
@@ -510,12 +506,12 @@ fragment TimeSpan on TimeSpan {
   durationMs
 }
 
-fragment MoeData on moeData {
-    breakdown {
-      share
-      storageContainer
-      data
-    }
+fragment SmActivityData on SmActivityData {
+  breakdown {
+    share
+    storageContainer
+    data
+  }
 }
 
 fragment NetworkInterface on NetworkInterface {
@@ -532,7 +528,7 @@ fragment NetworkInterface on NetworkInterface {
 }
 
 fragment ResourceId on ResourceId {
-	resourceType
+  resourceType
   name
   description
 #  uoid
@@ -540,7 +536,7 @@ fragment ResourceId on ResourceId {
 
 
 
-##################  introspection  ############################################
+##################  introspection  ################################
 
 query GetSchema {
   __schema {
@@ -565,17 +561,4 @@ query GetFileTypes {
       }
     }
   }
-}
-
-
-
-##### Query Variables ###########################################################################
-##### lower GraphiQL window
-
-{
-  "vpdsUoid": "ds1ds1ds1ds1ds1ds1",
-  "type": "COLLECTION",
-  "shareUoid": "XDSDTYUGUF",
-  "userId": 4,
-  "skipMoeBreakdowns": true
 }

@@ -1,0 +1,8 @@
+{
+  "vpdsUoid": "ds1ds1ds1ds1ds1ds1",
+  "type": "SHARE",
+  "fileType": "DIRECTORY",
+  "shareUoid": "XDSDTYUGUF",
+  "userId": 4,
+  "skipActivityBreakdowns": true
+}

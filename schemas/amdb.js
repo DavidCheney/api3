@@ -1,11 +1,6 @@
 // see also https://github.com/okgrow/merge-graphql-schemas
 
-// DateTime: see https://github.com/graphql/graphql-js/issues/497
-
 exports.types = `
-
-  # A date/time.
-  scalar DateTime
 
   # You can query on these types.
   type Query {
@@ -37,6 +32,7 @@ exports.types = `
     NODE
     VOLUME
     USER
+    FILE
   }
 
   # Map all uoid => resource.

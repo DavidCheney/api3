@@ -88,6 +88,8 @@ exports.types = `
     STORAGE_GROUP
     NODE
     VOLUME
+    FILESYSTEM
+    FILE
     USER
   }
 
@@ -117,7 +119,8 @@ exports.types = `
     collections: [StorageResource]!,
     storageGroups: [StorageResource]!,
     nodes: [StorageResource]!,
-    volumes: [StorageResource]!
+    volumes: [StorageResource]!,
+    filesystems: [Filesystem]!
   }
 
   # A Physical or Logical Storage Resource (see storageType): Health, Capabilities, Activity.
@@ -152,27 +155,26 @@ exports.types = `
 
   ##### Capabilities
   
-  # StorageCapabilities: collects filesystem, capacity, bandwidth, operation, and latency properties.
+  # StorageCapabilities: collects capacity, bandwidth, operation, and latency properties.
   type StorageCapabilities {
-    filesystem: FilesystemCapabilities,
     capacities: Capacities,
     bandwidths: Bandwidths,
     operations: Operations,
     latencies:  Latencies
   }
 
-  # FilesystemCapabilities: inode and compliance counts.  CompliantFiles = usedInodes - (nonCompliantFiles+severelyNonCompliantFiles).
-  type FilesystemCapabilities {
+  # Filesystem: objectUoid is host volume.  CompliantFiles = usedInodes - (nonCompliantFiles+severelyNonCompliantFiles).
+  type Filesystem {
     objectUoid: String!,
     totalInodes: Int,
     availableInodes: Int,
     usedInodes: Int,
     otherInodes: Int,
-    nonCompliantFiles: Int,
-    severelyNonCompliantFiles: Int
+    nonCompliantFiles: [File]!,
+    severelyNonCompliantFiles: [File]!
   }
 
-  # Capacities in MegaBytes: current, thresholds, measurements
+  # Capacities in MegaBytes: current, thresholds, measurements.
   type Capacities implements MeasurementsInterface, ThresholdInterface {
     objectUoid: String!,
     totalMB: Int,
@@ -183,7 +185,7 @@ exports.types = `
     measurements: [Measurement]
   }
 
-  # Bandwidths in MegaBytesPerSecond: current, thresholds, measurements
+  # Bandwidths in MegaBytesPerSecond: current, thresholds, measurements.
   type Bandwidths implements MeasurementsInterface, ThresholdInterface {
     objectUoid: String!,
     readMBPerSecond: Int,
@@ -283,7 +285,7 @@ exports.types = `
     OPS
   }
 
-  # A reduction function(array) => singleValue.
+  # A reduction function X(array) => singleValue.
   enum MetricFunction {
     RAW
     AVERAGE
@@ -294,12 +296,14 @@ exports.types = `
   ##### Thresholds.
   
   # ThresholdInterface: Common to Threshold.
+  # Object objectUoid has these thresholds.
   interface ThresholdInterface {
     objectUoid: String!,
     thresholds: [Threshold]
   }
 
-  # Threshold.
+  # Threshold.  A MetricUnit has a warningLimit and a severeLimit.
+  # Over timeSpan, the ThresholdInterface objectUoid (NOT SELF-IDENTIFYING?) has exceeded the limits Count times.
   type Threshold {
     unit: MetricUnit,
     timeSpan: TimeSpan,
@@ -309,11 +313,78 @@ exports.types = `
     severeCount: Int
   }
 
-  # if end=0, end is "now".  default duration is 5*60*60*1000. if start=0, start is "now-duration". 
+
+  ##### Time.
+  
+  # TimeSpan.  Unit is Unix Epoch Time: milliseconds since 12am Jan 1st 1970.
+  # Use case: A Metric may have an associated time span.  
+  # The span may be specified as:
+  # - an absolute range: startMs - endMs                 // durationMs is -1
+  # - an absolute range: startMs - durationMs            // endMs is -1
+  # - an absolute range: startMs - (startMs+durationMs)  // endMs is -1 
+  # - an absolute range: startMs - (endMs-durationMs)    // startMs is -1 
+  # - a relative range:  (now-durationMs) - now          // startMs and endMs are -1
   type TimeSpan {
     startMs: Int,
     endMs: Int,
     durationMs: Int
+  }
+  
+  
+  ##### SM Activity 
+  
+  # Activity on a storage resource.
+  type Activity {
+    storageResource: StorageResources,
+    timestamp: String,
+    maxReadOps: Float,
+    maxWriteOps: Float
+  }
+
+  # Common structure across Alignment, Performance, and Capacity records.
+  interface SmActivityData {
+    query: SmActivityQuery,
+    max: Float,
+    breakdown: [SmActivityBreakdown]
+  }
+
+  # Query - what is a good name for this class??
+  type SmActivityQuery {
+    storageContainer: String,
+    breakdown: BreakdownType
+  }
+
+  # BreakdownType
+  enum BreakdownType {
+    NONE
+  }
+  
+  # Alignment of physical or logical storage.
+  type Alignment implements SmActivityData {
+    query: SmActivityQuery,
+    max: Float,
+    breakdown: [SmActivityBreakdown]
+  }
+
+  # Performance of physical or logical storage.
+  type Performance implements SmActivityData {
+    query: SmActivityQuery,
+    max: Float,
+    breakdown: [SmActivityBreakdown]
+  }
+
+  # Capacity of physical or logical storage. AKA 'Space'.
+  type Capacity implements SmActivityData {
+    query: SmActivityQuery,
+    max: Float,
+    breakdown: [SmActivityBreakdown]
+  }
+
+  # Breakdown.  TBD.
+  type SmActivityBreakdown {
+    share: String,
+    storageContainer: String,
+    data: String
   }
   
   
@@ -334,7 +405,7 @@ exports.types = `
   }
 
 
-  ##### Files
+  ##### SM Files.
   
   # File type.
   enum FileType {
@@ -352,7 +423,7 @@ exports.types = `
     name: String,
     parent: String,
     path: String,
-    permanentDataLoss:Boolean,
+    permanentDataLoss: Boolean,
     physicalSize: String,
     profileName: String,
     readable:Boolean,
@@ -363,7 +434,8 @@ exports.types = `
     slos: String,
     type: String,
     volumes: String,
-    writable:Boolean
+    writable:Boolean,
+    children: [File]
   }
 
   # A set of statistics for a file.  Columns defines units and order, rows contain values.
@@ -383,6 +455,9 @@ exports.types = `
     time: String,
     timeStamp: String
   }
+  
+  
+  ##### Other.
 
   # An event with a type, severity, parameters, etc.
   type Events {
@@ -406,52 +481,17 @@ exports.types = `
     exitValue: String
   }
 
-  # Activity on a storage resource.
-  type Activity {
-    storageResource: StorageResources,
-    timestamp: String,
-    maxReadOps: Float,
-    maxWriteOps: Float
-  }
-
-  # Common structure across Alignment, Performance, and Capacity records.
-  interface moeData {
-    max: Float,
-    breakdown: [MoeBreakdown]
-  }
-
-  # Alignment of physical or logical storage.
-  type Alignment implements moeData {
-    max: Float,
-    breakdown: [MoeBreakdown]
-  }
-
-  # Performance of physical or logical storage.
-  type Performance implements moeData {
-    max: Float,
-    breakdown: [MoeBreakdown]
-  }
-
-  # Capacity of physical or logical storage. AKA 'Space'.
-  type Capacity implements moeData {
-    max: Float,
-    breakdown: [MoeBreakdown]
-  }
-
-  type MoeBreakdown {
-    share: String,
-    storageContainer: String,
-    data: String
-  }
-
+  # ComputeResources.  TBD
   type ComputeResources {
     cpu: String
   }
 
+  # CommunicationResources.  TBD
   type CommunicationResources {
     networkInterfaces: [NetworkInterface]
   }
 
+  # NetworkInterface.  TBD
   type NetworkInterface {
     id: ResourceId,
     nodeId: ResourceId,

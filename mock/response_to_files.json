@@ -123,7 +123,14 @@
     "slos": null,
     "volumes": null,
     "movers": null,
-    "children": null,
+    "children": [
+      {
+        "path": "/a/b/c/file.xtx"
+      },
+      {
+        "path": "/a/b/c/file2.xtx"
+      }
+    ],
     "explicit": false,
     "compliance": null,
     "sloTargets": null
@@ -223,7 +230,87 @@
     "slos": null,
     "volumes": null,
     "movers": null,
-    "children": null,
+    "children": [
+      {
+        "path": "/mnt/pdfs/ux/date.txt",
+        "name": "date.txt",
+        "parent": "/mnt/pdfs/ux/",
+        "sharePath": "/ux",
+        "shareName": "UXellence",
+        "type": "FILE",
+        "lastModified": "1496765684",
+        "size": "29",
+        "logicalSize": "29",
+        "physicalSize": "4096",
+        "readable": true,
+        "writable": true,
+        "executable": false,
+        "access": null,
+        "profileName": "tmp_to_export0",
+        "permanentDataLoss": false,
+        "slos": [
+          {
+            "uoid": {
+              "uuid": "4922ccce-41fc-468f-b7fe-f635c94283f8",
+              "objectType": "ELEMENTAL_OBJECTIVE"
+            },
+            "created": null,
+            "modified": null,
+            "extendedInfo": {},
+            "comment": null,
+            "internalId": null,
+            "name": "default-objective",
+            "priority": null,
+            "readPerformance": null,
+            "writePerformance": null,
+            "protection": null,
+            "placementObjective": null
+          }
+        ],
+        "volumes": [
+          {
+            "_type": "STORAGE_VOLUME",
+            "uoid": {
+              "uuid": "688435ab-219a-4b2c-aab1-756d9f8dd3b9",
+              "objectType": "STORAGE_VOLUME"
+            },
+            "created": null,
+            "modified": null,
+            "extendedInfo": {},
+            "comment": null,
+            "node": null,
+            "operState": null,
+            "adminState": null,
+            "name": "pdux-ds1-uiux-060617145331978.lab.primarydata.com:/pd_export1",
+            "internalId": null,
+            "storageVolumeState": null,
+            "location": null,
+            "storageCapabilities": null,
+            "associatedLocations": null,
+            "extraData": null,
+            "cost": null,
+            "decommissionNumOfFiles": null,
+            "decommissionSpaceUsed": null,
+            "numOfFiles": null,
+            "spaceUsed": null,
+            "logicalVolume": null,
+            "resources": null,
+            "inodes": null,
+            "uri": "storage-volumes/688435ab-219a-4b2c-aab1-756d9f8dd3b9"
+          }
+        ],
+        "movers": null,
+        "children": null,
+        "explicit": false,
+        "compliance": [
+          {
+            "dimension": "DIMENSION_TOTAL",
+            "compliance": 3
+          }
+        ],
+        "sloTargets": null
+      }
+    ],
     "explicit": false,
     "compliance": null,
     "sloTargets": null

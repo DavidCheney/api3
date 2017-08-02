@@ -1,5 +1,4 @@
 {
-  "uoid": "JHCRRDGYKKHFDXSDR",
   "id": {
     "uoid": "JHCRRDGYKKHFDXSDR",
     "resourceType": "DATASPHERE",
@@ -43,20 +42,15 @@
         }
       ],
       "health": {
-        "status": "WARNING",
-        "disorders": [
-          {
-            "messageTemplate": "CAPACITY_WARNING_THRESHOLD",
-            "severity": "WARNING",
-            "data": [
-              "90"
-            ]
-          }
-        ]
-      }
+        "status": "HEALTHY",
+        "disorders": []
+      },
+      "computeResources": [],
+      "communicationResources": [],
+      "storageResources": [],
+      "activeUsers": []
     },
     {
-      "uoid": "ds1ds1ds1ds1ds1ds1",
       "id": {
         "uoid": "ds1ds1ds1ds1ds1ds1",
         "resourceType": "VIRTUAL_DATASPHERE",
@@ -90,14 +84,21 @@
         }
       ],
       "health": {
-        "status": "HEALTHY",
-        "disorders": []
+        "status": "WARNING",
+        "disorders": [
+          {
+            "messageTemplate": "FILES_MISALIGNED",
+            "severity": "WARNING",
+            "data": [
+              "HKBTBVGBJIB:/dir1/dir1a/misaligned.txt"
+            ]
+          }
+        ]
       },
       "computeResources": [],
       "communicationResources": [],
       "storageResources": [
         {
-          "uoid": "ds1ds1ds1ds1ds1ds1",
           "id": {
             "uoid": "ds1ds1ds1ds1ds1ds1",
             "resourceType": "VIRTUAL_DATASPHERE",
@@ -344,15 +345,6 @@
                 ]
               },
               "capabilities": {
-                "filesystem": {
-                  "objectUoid": "NKUFDDFGUF",
-                  "totalInodes": 782345,
-                  "availableInodes": 780000,
-                  "usedInodes": 2345,
-                  "otherInodes": 0,
-                  "nonCompliantFiles": 3,
-                  "severelyNonCompliantFiles": 0
-                },
                 "capacities": {
                   "objectUoid": "NKUFDDFGUF",
                   "totalMB": 12345,
@@ -467,8 +459,8 @@
                   "availableInodes": 780000,
                   "usedInodes": 19999,
                   "otherInodes": 0,
-                  "nonCompliantFiles": 3,
-                  "severelyNonCompliantFiles": 0
+                  "nonCompliantFiles": [],
+                  "severelyNonCompliantFiles": []
                 },
                 "capacities": {
                   "objectUoid": "SWDXCHUIKLPOH",
@@ -557,6 +549,32 @@
                   "XDSDTYUGUF"
                 ]
               }
+            }
+          ],
+          "filesystems": [
+            {
+              "objectUoid": "NKUFDDFGUF",
+              "totalInodes": 782345,
+              "availableInodes": 780000,
+              "usedInodes": 2345,
+              "otherInodes": 0,
+              "nonCompliantFiles": [
+                {
+                  "path": "/mnt/pdfs/ux/ioTraffic",
+                  "shareName": "UXellence",
+                  "type": "FILE",
+                  "lastModified": "1504367773",
+                  "compliance": null
+                },
+                {
+                  "path": "/mnt/pdfs/ux/mobility",
+                  "shareName": "UXellence",
+                  "type": "FILE",
+                  "lastModified": "1504368083",
+                  "compliance": null
+                }
+              ],
+              "severelyNonCompliantFiles": []
             }
           ]
         }

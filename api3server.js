@@ -29,7 +29,7 @@ let root = {
         return find(dataSphere.virtualDataSpheres, {uoid: args.uoid});
     },
     users: (args) => {
-        return find(users, {id: args.id});
+        return find(users, {uoid: args.id});
     },
     files: (args) => {
         return find(files, {type: args.type})
@@ -93,7 +93,7 @@ let users = [
 
 // return the entire array if the kv_pair is missing or invalid
 function find(array, kv_pair) {
-    // console.log("find", kv_pair, array);
+    // console.log("find", kv_pair, " in ", array);
     if (!kv_pair || !Object.keys(kv_pair)[0] || !Object.values(kv_pair)[0]) {
         return array;
     }
@@ -103,7 +103,7 @@ function find(array, kv_pair) {
     if (key === 'type' && value === "ALL") { return array; }
     let matches = [];
     for (let i = 0; i < array.length; i++) {
-        if (key === 'id' && array[i][key] && array[i][key]['uoid'] === value) {
+        if (key === 'uoid' && array[i]['id'] && array[i]['id']['uoid'] === value) {
             // console.log("find matched id.uoid", array[i]);
             matches.push(array[i]);
         } else if (array[i][key] && array[i][key] === value) {
